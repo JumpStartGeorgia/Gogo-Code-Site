@@ -1,13 +1,16 @@
 .nav-dropdown-button {
   border: 0;
   background-color: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 22px;
 }
 
   .nav-dropdown-button-icon-bar {
     display: block;
-    margin-top: 4px;
-    width: 22px;
-    height: 2px;
+    width: 23px;
+    height: 1px;
     border-radius: 1px;
     background-color: #3de2ff;
 }
