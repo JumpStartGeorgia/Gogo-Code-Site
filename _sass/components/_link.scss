@@ -7,6 +7,25 @@
   font-size: 1.1rem;
 }
 
+.link.mod-donate {
+  background-color: $secondary-color;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0.8rem;
+
+  &::before {
+    content: '<';
+    vertical-align: 0.05em;
+    margin-right: -0.2em
+  }
+
+  &::after {
+    content: '>';
+    vertical-align: 0.05em;
+    margin-left: -0.2em;
+  }
+}
+
 .link.mod-language {
   font-size: 1.05rem;
 }
