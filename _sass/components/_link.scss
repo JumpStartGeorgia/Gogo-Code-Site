@@ -13,8 +13,6 @@
   width: 8rem;
   display: block;
   text-align: center;
-
-  @include m-surround-with-brackets();
 }
 
 .link.mod-donate {
@@ -25,7 +23,9 @@
   width: 8rem;
   display: block;
   text-align: center;
+}
 
+.link.mod-surround-with-brackets {
   @include m-surround-with-brackets();
 }
 

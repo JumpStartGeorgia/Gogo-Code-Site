@@ -46,13 +46,13 @@ layout: default
       </li>
 
       <li class='main-nav-list-item'>
-        <a class='link mod-contact' href='{{ "/#contact" | prepend: site.baseurl }}'>
+        <a class='link mod-contact mod-surround-with-brackets' href='{{ "/#contact" | prepend: site.baseurl }}'>
           Contact
         </a>
       </li>
 
       <li class='main-nav-list-item'>
-        <a class='link mod-donate' href='{{ "/#" | prepend: site.baseurl }}'>
+        <a class='link mod-donate mod-surround-with-brackets' href='{{ "/#" | prepend: site.baseurl }}'>
           Donate
         </a>
       </li>
@@ -170,7 +170,9 @@ layout: default
       Computer coding is important in every aspect of life, including medicine, community development, and economics.
     </p>
 
-    <button>Donate</button>
+    <a class='link mod-donate' href='{{ "/#" | prepend: site.baseurl }}'>
+      Donate
+    </a>
 
     <p>
       “If women aren’t represented in technology, their ideas, concerns, and designs won’t be included when we create the cities, cars, infrastructure, medicines, communications, companies, and governments of tomorrow.” - Google’s Made With Code
@@ -210,7 +212,9 @@ layout: default
 
     </section>
 
-    <button>Donate</button>
+    <a class='link mod-donate' href='{{ "/#" | prepend: site.baseurl }}'>
+      Donate
+    </a>
 
   </section>
 
