@@ -10,13 +10,21 @@
 .link.mod-contact {
   background-color: $primary-color;
   color: white;
+  width: 8rem;
+  display: block;
+  text-align: center;
+
+  @include m-surround-with-brackets();
 }
 
 .link.mod-donate {
   background-color: $secondary-color;
   font-size: 1.3rem;
   color: white;
-  padding: 0.8rem;
+  padding: 0.8rem 0;
+  width: 8rem;
+  display: block;
+  text-align: center;
 
   @include m-surround-with-brackets();
 }
