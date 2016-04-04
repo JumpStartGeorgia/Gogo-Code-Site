@@ -7,8 +7,11 @@
   }
 }
 
-.main-nav.is-hidden {
+.main-nav.is-hidden-on-mobile {
   display: none;
+  @media (min-width: $hide-nav-width) {
+    display: initial;
+  }
 }
 
   .main-nav-list {
@@ -17,6 +20,10 @@
     align-items: center;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $hide-nav-width) {
+      flex-flow: row nowrap;
+    }
   }
 
     .main-nav-list-item {
