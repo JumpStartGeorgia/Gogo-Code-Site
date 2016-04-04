@@ -1,4 +1,4 @@
-.m-surround-with-brackets () {
+@mixin m-surround-with-brackets() {
   &::before {
     content: '<';
     vertical-align: 0.05em;

@@ -4,5 +4,5 @@
   font-weight: 300;
   text-transform: lowercase;
 
-  .m-surround-with-brackets();
+  @include m-surround-with-brackets();
 }

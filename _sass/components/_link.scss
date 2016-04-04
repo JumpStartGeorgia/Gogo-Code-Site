@@ -18,7 +18,7 @@
   color: white;
   padding: 0.8rem;
 
-  .m-surround-with-brackets();
+  @include m-surround-with-brackets();
 }
 
 .link.mod-language {
