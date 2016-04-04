@@ -1,6 +1,10 @@
 .main-nav {
   padding: 0.8em 0;
   background-color: $grey-color;
+
+  @media (min-width: $hide-nav-width) {
+    background-color: inherit;
+  }
 }
 
   .main-nav-list {
@@ -10,7 +14,10 @@
   }
 
     .main-nav-list-item {
-      padding: 0.8rem 0;
+      padding: 0.8rem;
       list-style-type: none;
 
+      @media (min-width: $hide-nav-width) {
+        display: inline-block;
+      }
     }
