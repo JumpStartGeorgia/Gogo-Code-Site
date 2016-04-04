@@ -5,6 +5,10 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   height: 22px;
+
+  @media (min-width: $hide-nav-width) {
+    display: none;
+  }
 }
 
   .nav-toggle-button-icon-bar {

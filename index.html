@@ -4,13 +4,37 @@ layout: default
 
 <header class='header'>
 
-  {% include icon-gogo-code-logo.svg %}
+  <div class='header-mobile'>
 
-  <button class='nav-toggle-button'>
-    <span class='nav-toggle-button-icon-bar'></span>
-    <span class='nav-toggle-button-icon-bar'></span>
-    <span class='nav-toggle-button-icon-bar'></span>
-  </button>
+    <div class='header-mobile-brand'>
+      {% include icon-gogo-code-logo.svg %}
+    </div>
+
+    <button class='nav-toggle-button'>
+      <span class='nav-toggle-button-icon-bar'></span>
+      <span class='nav-toggle-button-icon-bar'></span>
+      <span class='nav-toggle-button-icon-bar'></span>
+    </button>
+
+  </div>
+
+  <nav class='main-nav'>
+    <ul>
+
+      <li>
+        <a href='{{ "/#about" | prepend: site.baseurl }}'>
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href='{{ "/#why-coding" | prepend: site.baseurl }}'>
+          Why coding?
+        </a>
+      </li>
+
+    </ul>
+  </nav>
 
 </header>
 
@@ -22,7 +46,7 @@ layout: default
     Gogo Code is a program to teach teenage girls in Georgia the basics of computer programming and encourage participation in STEM fields.
   </p>
 
-  <section>
+  <section id='about'>
 
     <h2 class='heading'>
       What is Gogo Code?
@@ -96,7 +120,7 @@ layout: default
 
   </section>
 
-  <section>
+  <section id='why-coding'>
 
     <h2>Why coding and STEM?</h2>
 
