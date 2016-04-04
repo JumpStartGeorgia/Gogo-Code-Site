@@ -7,6 +7,10 @@
   }
 }
 
+.main-nav.is-hidden {
+  display: none;
+}
+
   .main-nav-list {
     display: flex;
     flex-flow: column nowrap;
