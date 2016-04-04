@@ -1,0 +1,77 @@
+<header class='header'>
+
+  <h1 class='u-visually-hidden'>
+    Header
+  </h1>
+
+  <div class='header-mobile'>
+
+    <div class='header-mobile-brand'>
+      {% include icon-gogo-code-logo.svg %}
+    </div>
+
+    <button class='nav-toggle-button js-toggle-navigation'>
+      <span class='nav-toggle-button-icon-bar'></span>
+      <span class='nav-toggle-button-icon-bar'></span>
+      <span class='nav-toggle-button-icon-bar'></span>
+    </button>
+
+  </div>
+
+  <nav class='main-nav is-hidden-on-mobile js-act-as-navigation'>
+    <h2 class='u-visually-hidden'>
+      Primary Navigation
+    </h2>
+
+    <ul class='main-nav-list'>
+
+      <li class='main-nav-list-item'>
+        <a class='link' href='{{ "/#about" | prepend: site.baseurl }}'>
+          About
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='link' href='{{ "/#why-coding" | prepend: site.baseurl }}'>
+          Why coding?
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='link' href='{{ "/#support" | prepend: site.baseurl }}'>
+          Support
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='link' href='{{ "/#team" | prepend: site.baseurl }}'>
+          Team
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='link mod-contact mod-surround-with-brackets' href='{{ "/#contact" | prepend: site.baseurl }}'>
+          Contact
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='link mod-donate mod-surround-with-brackets' href='{{ "/#" | prepend: site.baseurl }}'>
+          Donate
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='link mod-language' href='{{ "/ka" | prepend: site.baseurl }}'>
+          ქა
+        </a>
+
+        <a class='link mod-language is-active' href='{{ "/" | prepend: site.baseurl }}'>
+          En
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+</header>
