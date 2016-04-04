@@ -3,6 +3,11 @@
   font-family: $secondary-font-family;
   font-weight: 300;
   text-transform: lowercase;
+  font-size: 1.6rem;
 
   @include m-surround-with-brackets();
 }
+
+  .heading.mod-minor {
+    font-size: 1.2rem;
+  }
