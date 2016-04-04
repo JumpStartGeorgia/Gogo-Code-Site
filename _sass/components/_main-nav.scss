@@ -1,3 +1,16 @@
 .main-nav {
-  // position: absolute;
+  padding: 0.8em 0;
+  background-color: $grey-color;
 }
+
+  .main-nav-list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+    .main-nav-list-item {
+      padding: 0.8rem 0;
+      list-style-type: none;
+
+    }
