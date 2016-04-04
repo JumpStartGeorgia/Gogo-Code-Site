@@ -1,0 +1,13 @@
+.m-surround-with-brackets () {
+  &::before {
+    content: '<';
+    vertical-align: 0.05em;
+    margin-right: -0.2em
+  }
+
+  &::after {
+    content: '>';
+    vertical-align: 0.05em;
+    margin-left: -0.2em;
+  }
+}

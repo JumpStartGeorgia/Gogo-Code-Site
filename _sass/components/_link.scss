@@ -13,17 +13,7 @@
   color: white;
   padding: 0.8rem;
 
-  &::before {
-    content: '<';
-    vertical-align: 0.05em;
-    margin-right: -0.2em
-  }
-
-  &::after {
-    content: '>';
-    vertical-align: 0.05em;
-    margin-left: -0.2em;
-  }
+  .m-surround-with-brackets();
 }
 
 .link.mod-language {
