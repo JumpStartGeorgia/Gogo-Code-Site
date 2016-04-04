@@ -4,4 +4,21 @@
   font-weight: 200;
   color: darken($grey-color, 40%);
   text-transform: lowercase;
+  font-size: 1.1rem;
+}
+
+.link.mod-language {
+  font-size: 1.05rem;
+}
+
+.link.mod-language::after {
+  content: '|';
+}
+
+.link.mod-language:last-child::after {
+  content: none;
+}
+
+.link.is-active {
+  color: $secondary-color;
 }
