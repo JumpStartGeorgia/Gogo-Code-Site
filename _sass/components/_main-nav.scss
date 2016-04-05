@@ -1,6 +1,6 @@
 .main-nav {
   padding: 0.8em 0;
-  background-color: $grey-color;
+  background-color: $grey-background-color;
 
   @media (min-width: $hide-nav-width) {
     background-color: inherit;
