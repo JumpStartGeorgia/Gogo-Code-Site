@@ -3,4 +3,6 @@
   color: white;
   margin: 0;
   padding: 0 6rem 0 2rem;
+
+  @include m-cancel-content-margin();
 }

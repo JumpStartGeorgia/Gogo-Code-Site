@@ -1,4 +1,6 @@
 .header {
+  @include m-cancel-content-margin();
+  
   @media (min-width: $hide-nav-width) {
     display: flex;
     justify-content: space-between;
