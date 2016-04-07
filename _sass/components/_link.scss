@@ -23,22 +23,6 @@
 
 
 
-.link.mod-donate {
-  background-color: $secondary-color;
-  font-size: 1.3rem;
-  color: white;
-  padding: 0.8rem 0;
-  min-width: 8rem;
-  display: block;
-  text-align: center;
-}
-
-.link.mod-donate:hover {
-  @include m-surround-with-brackets();
-}
-
-
-
 .link.mod-language {
   font-size: 1.05rem;
 }
