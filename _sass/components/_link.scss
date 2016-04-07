@@ -7,10 +7,6 @@
   font-size: 1.1rem;
 }
 
-.link.is-active {
-  color: $secondary-color;
-}
-
 
 
 .link.mod-nav-standard:hover {
@@ -51,4 +47,8 @@
 
 .link.mod-language:last-child::after {
   content: none;
+}
+
+.link.mod-language.is-active {
+  color: $secondary-color;
 }
