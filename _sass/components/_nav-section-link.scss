@@ -1,18 +1,14 @@
-.link {
-  text-decoration: none;
-  font-family: $secondary-font-family;
-  font-weight: 200;
+.nav-section-link {
   color: darken($grey-background-color, 40%);
-  text-transform: lowercase;
-  font-size: 1.1rem;
-}
-
-
-.link.mod-nav-standard {
   display: block;
+  font-family: $secondary-font-family;
+  font-size: 1.1rem;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
-.link.mod-nav-standard:hover {
+.nav-section-link:hover {
   background-color: $primary-color;
   color: white;
   min-width: 8rem;
