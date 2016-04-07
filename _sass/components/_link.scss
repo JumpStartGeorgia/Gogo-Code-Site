@@ -20,21 +20,3 @@
 
   @include m-surround-with-brackets();
 }
-
-
-
-.link.mod-language {
-  font-size: 1.05rem;
-}
-
-.link.mod-language::after {
-  content: '|';
-}
-
-.link.mod-language:last-child::after {
-  content: none;
-}
-
-.link.mod-language.is-active {
-  color: $secondary-color;
-}

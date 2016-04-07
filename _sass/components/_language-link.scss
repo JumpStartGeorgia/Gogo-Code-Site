@@ -1,0 +1,20 @@
+.language-link {
+  text-decoration: none;
+  font-family: $secondary-font-family;
+  font-weight: 200;
+  color: darken($grey-background-color, 40%);
+  text-transform: lowercase;
+  font-size: 1.05rem;
+}
+
+.language-link::after {
+  content: '|';
+}
+
+.language-link:last-child::after {
+  content: none;
+}
+
+.language-link.is-active {
+  color: $secondary-color;
+}
