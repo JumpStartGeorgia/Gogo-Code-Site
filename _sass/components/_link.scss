@@ -7,20 +7,30 @@
   font-size: 1.1rem;
 }
 
-.link.mod-contact {
+.link.is-active {
+  color: $secondary-color;
+}
+
+
+
+.link.mod-nav-standard:hover {
   background-color: $primary-color;
   color: white;
-  width: 8rem;
+  min-width: 8rem;
   display: block;
   text-align: center;
+
+  @include m-surround-with-brackets();
 }
+
+
 
 .link.mod-donate {
   background-color: $secondary-color;
   font-size: 1.3rem;
   color: white;
   padding: 0.8rem 0;
-  width: 8rem;
+  min-width: 8rem;
   display: block;
   text-align: center;
 }
@@ -29,9 +39,7 @@
   @include m-surround-with-brackets();
 }
 
-.link.mod-surround-with-brackets {
-  @include m-surround-with-brackets();
-}
+
 
 .link.mod-language {
   font-size: 1.05rem;
@@ -43,8 +51,4 @@
 
 .link.mod-language:last-child::after {
   content: none;
-}
-
-.link.is-active {
-  color: $secondary-color;
 }
