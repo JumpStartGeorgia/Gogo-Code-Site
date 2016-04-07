@@ -8,12 +8,14 @@
 }
 
 
+.link.mod-nav-standard {
+  display: block;
+}
 
 .link.mod-nav-standard:hover {
   background-color: $primary-color;
   color: white;
   min-width: 8rem;
-  display: block;
   text-align: center;
 
   @include m-surround-with-brackets();
