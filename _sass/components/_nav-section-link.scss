@@ -9,6 +9,14 @@
 }
 
 .nav-section-link:hover {
+  color: $primary-color;
+  min-width: 8rem;
+  text-align: center;
+
+  @include m-surround-with-brackets();
+}
+
+.nav-section-link:active {
   background-color: $primary-color;
   color: white;
   min-width: 8rem;
