@@ -2,11 +2,13 @@
   &::before {
     content: '<';
     margin-right: -0.2em;
+    visibility: visible;
   }
 
   &::after {
     content: '>';
     margin-left: -0.2em;
+    visibility: visible;
   }
 }
 
