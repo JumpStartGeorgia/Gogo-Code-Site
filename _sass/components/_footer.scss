@@ -1,0 +1,12 @@
+.footer {
+  background-color: $grey-background-color;
+
+  @include m-cancel-content-margin();
+
+  padding: 1rem $content-margin;
+}
+
+.footer-text {
+  color: darken($grey-background-color, 30%);
+  margin: 0;
+}
