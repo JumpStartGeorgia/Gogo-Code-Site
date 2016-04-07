@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.link.mod-donate:hover {
+  @include m-surround-with-brackets();
+}
+
 .link.mod-surround-with-brackets {
   @include m-surround-with-brackets();
 }
