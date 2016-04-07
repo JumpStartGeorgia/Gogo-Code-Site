@@ -11,7 +11,9 @@
 
   @media (min-width: $hide-nav-width) {
     min-width: initial;
-    
+
+    // Necessary to insert invisible brackets so that hovering doesn't
+    // change content box width
     &::before {
       content: '<';
       margin-right: -0.2em;
