@@ -1,0 +1,30 @@
+.list-block {
+  padding: 0.5rem;
+  background-color: $grey-background-color;
+}
+
+  .list-block-heading {
+    font-weight: 900;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .list-block-list {
+    margin: 0.5rem 0;
+  }
+
+    .list-block-list-item {
+      color: black;
+      list-style-type: none;
+      margin: 0.5rem 0;
+    }
+
+    .list-block-list-item:before {
+      color: $primary-color;
+      float: left;
+      margin: 0;
+      margin-left: -1em;
+      margin-top: -0.65rem;
+      width: 1em;
+      font-size: 2rem;
+      content: '\2022';
+    }
