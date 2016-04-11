@@ -4,9 +4,14 @@
   font-weight: 300;
   text-transform: lowercase;
   font-size: 1.6rem;
+  margin: 1rem 0;
 
   @include m-surround-with-brackets();
 }
+
+  .heading.mod-no-margins {
+    margin: 0;
+  }
 
   .heading.mod-footer {
     font-size: 1.2rem;

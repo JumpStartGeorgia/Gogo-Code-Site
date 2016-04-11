@@ -1,9 +1,14 @@
 .section {
-  margin: 2rem 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .section.mod-small-top-margin {
   margin-top: 1rem;
+}
+
+.section.mod-top-padding {
+  padding-top: 1rem;
 }
 
 .section.mod-grey-background {
@@ -11,4 +16,8 @@
 
   @include m-cancel-content-margin();
   @include m-content-padding();
+}
+
+.section.mod-top-border {
+  border-top: 3px solid lighten($primary-color, 45%);
 }
