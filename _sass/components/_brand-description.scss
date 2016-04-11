@@ -1,16 +1,21 @@
-.brand-description {
-  background-color: lighten(black, 50%);
+.brand {
+  background-color: darken($grey-background-color, 30%);
   background-image: url($site-baseurl + '/assets/images/Brand-Description-Background-Girl-At-Computer.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: 20% 25%;
   background-size: 200% auto;
 
-  color: white;
-  margin: 0;
   padding-top: 2rem;
   padding-bottom: 1rem;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
 }
+
+  .brand-description {
+    color: white;
+    margin: 0;
+    width: 50%;
+    max-width: 500px;
+  }
