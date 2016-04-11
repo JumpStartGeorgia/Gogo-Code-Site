@@ -1,3 +1,31 @@
 .coding-awesome-section {
   background: url($site-baseurl + '/assets/images/Computer-Coding-Is-Awesome.jpg');
+  padding-bottom: 3rem;
+
+  @include m-cancel-content-margin();
+  @include m-content-padding();
 }
+
+  .coding-awesome-section-intro {
+    background: $primary-color;
+    background: rgba($primary-color, 0.5);
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    @include m-cancel-content-margin();
+    @include m-content-padding();
+  }
+
+    .coding-awesome-section-intro-text {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+  .coding-awesome-section-quote {
+    color: white;
+    opacity: .5;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+  }
