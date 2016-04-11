@@ -1,6 +1,6 @@
 .header {
   @include m-cancel-content-margin();
-  
+
   @media (min-width: $hide-nav-width) {
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@
 
     .header-mobile-brand {
       width: 55%;
+      max-width: 170px;
 
       @media (min-width: $hide-nav-width) {
         width: 100%;
