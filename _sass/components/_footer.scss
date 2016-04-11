@@ -1,9 +1,10 @@
 .footer {
   background-color: $grey-background-color;
-
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  
   @include m-cancel-content-margin();
-
-  padding: 1rem $content-margin;
+  @include m-content-padding();
 }
 
   .footer-section {
