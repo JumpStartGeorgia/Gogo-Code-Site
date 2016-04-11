@@ -16,3 +16,8 @@
   margin-left: -1*$content-margin;
   margin-right: -1*$content-margin;
 }
+
+@mixin m-content-padding() {
+  padding-left: $content-margin;
+  padding-right: $content-margin;
+}

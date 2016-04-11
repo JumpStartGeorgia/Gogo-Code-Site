@@ -5,3 +5,10 @@
 .section.mod-small-top-margin {
   margin-top: 1rem;
 }
+
+.section.mod-grey-background {
+  background: $grey-background-color;
+
+  @include m-cancel-content-margin();
+  @include m-content-padding();
+}
