@@ -8,6 +8,7 @@
 
   @include m-surround-with-brackets();
 
+  // Prevents heading brackets from wrapping to next line on small screen
   @media (max-width: 350px) {
     font-size: 1.4rem;
   }
