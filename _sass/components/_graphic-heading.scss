@@ -1,21 +1,26 @@
 .graphic-heading {
-  background-color: rgba($secondary-color, .8);
-  padding: 2rem 0;
-
-  @include m-cancel-content-margin();
-  @include m-content-padding();
+  background: url($site-baseurl + '/assets/images/Girl-Studying-At-Computer.jpg');
 }
 
-  .graphic-heading-icon {
-    text-align: center;
+  .graphic-heading-container {
+    background-color: rgba($secondary-color, .7);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include m-cancel-content-margin();
+    @include m-content-padding();
   }
 
-  .graphic-heading-text {
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: $secondary-font-family;
-    font-size: 2.5rem;
-    font-weight: 100;
-    margin: 0;
-  }
+    .graphic-heading-container-icon {
+      text-align: center;
+    }
+
+    .graphic-heading-container-text {
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $secondary-font-family;
+      font-size: 2.5rem;
+      font-weight: 100;
+      margin: 0;
+    }
