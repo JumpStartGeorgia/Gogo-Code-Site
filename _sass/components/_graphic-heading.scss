@@ -2,10 +2,6 @@
   background: url($site-baseurl + '/assets/images/Girl-Studying-At-Computer.jpg');
 }
 
-.graphic-heading.mod-after-camp {
-  background: url($site-baseurl + '/assets/images/Instructor-Helping-Student-At-Computer.jpg');
-}
-
   .graphic-heading-container {
     background-color: rgba($secondary-color, .7);
     padding-top: 2rem;
@@ -28,3 +24,11 @@
       font-weight: 100;
       margin: 0;
     }
+
+.graphic-heading.mod-after-camp {
+  background: url($site-baseurl + '/assets/images/Instructor-Helping-Student-At-Computer.jpg');
+
+  .graphic-heading-container {
+    background-color: rgba($tertiary-color, .7);
+  }
+}
