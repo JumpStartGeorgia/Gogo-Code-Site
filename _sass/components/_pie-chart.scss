@@ -1,0 +1,34 @@
+/*
+Source: https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
+*/
+
+.pie-chart {
+  position: relative;
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  background: darken($grey-background-color, 6%);
+  margin: 2rem auto;
+  background-image:
+  linear-gradient(to right, transparent 50%, $primary-color 0);
+}
+
+.pie-chart::before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  transform: rotate(.16turn);
+}
+
+  .pie-chart-label {
+    color: $primary-color;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: absolute;
+    top: -22px;
+    right: 4px;
+  }
