@@ -12,6 +12,8 @@
   }
 }
 
+$content-margin: 1.5rem;
+
 @mixin m-cancel-content-margin() {
   margin-left: -1*$content-margin;
   margin-right: -1*$content-margin;

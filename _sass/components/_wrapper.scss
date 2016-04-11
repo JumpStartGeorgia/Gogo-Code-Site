@@ -2,7 +2,7 @@
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $primary-font-family;
     color: $text-color;
     background-color: $background-color;
-    padding: 0 1.5rem;
+    @include m-content-padding();
 
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
