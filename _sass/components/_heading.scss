@@ -7,6 +7,14 @@
   margin: 1rem 0;
 
   @include m-surround-with-brackets();
+
+  @media (max-width: 350px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 310px) {
+    font-size: 1.2rem;
+  }
 }
 
   .heading.mod-no-margins {
