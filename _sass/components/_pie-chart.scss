@@ -1,5 +1,7 @@
 /*
 Source: https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
+Note: Current code does not work for percentages greater than 50%. The article
+      above describes a way to fix that.
 */
 
 .pie-chart {
