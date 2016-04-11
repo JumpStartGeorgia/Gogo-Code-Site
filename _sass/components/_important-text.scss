@@ -1,3 +1,7 @@
 .important-text {
   font-weight: 900;
 }
+
+.important-text.mod-uppercase {
+  text-transform: uppercase;
+}
