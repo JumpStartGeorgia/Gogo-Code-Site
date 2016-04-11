@@ -1,8 +1,7 @@
-$background-url: '/Gogo-Code-Site/assets/images/Brand-Description-Background-Girl-At-Computer.jpg';
 
 .brand-description {
   background-color: lighten(black, 50%);
-  background-image: url($background-url);
+  background-image: url($site-baseurl + '/assets/images/Brand-Description-Background-Girl-At-Computer.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: 20% 25%;
