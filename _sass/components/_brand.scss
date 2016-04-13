@@ -32,6 +32,10 @@
       width: 19em;
       max-width: 60%;
       position: absolute;
-      bottom: 1em;
+      bottom: 0.3em;
       left: 0;
+
+      @media (min-width: 750px) {
+        bottom: 2em;
+      }
     }
