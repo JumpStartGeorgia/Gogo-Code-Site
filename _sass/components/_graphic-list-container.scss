@@ -1,13 +1,12 @@
 .graphic-list-container {
   @media (min-width: $graphic-list-become-horizontal) {
     display: flex;
-    height: 350px;
   }
 }
 
   .graphic-list-container-item {
     @media (min-width: $graphic-list-become-horizontal) {
       flex: 1;
-      height: inherit;
+      height: 325px;
     }
   }
