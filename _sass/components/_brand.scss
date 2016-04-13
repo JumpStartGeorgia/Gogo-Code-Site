@@ -5,6 +5,16 @@
 
   @include m-cancel-content-margin();
   @include m-content-padding();
+
+  @media (min-width: 750px) {
+    height: 400px;
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: 1000px) {
+    height: 550px;
+    font-size: 1.8rem;
+  }
 }
 
   .brand-content {
@@ -19,9 +29,9 @@
     .brand-description {
       color: white;
       margin: 0;
-      width: 250px;
+      width: 19em;
       max-width: 60%;
       position: absolute;
-      bottom: 20px;
+      bottom: 1em;
       left: 0;
     }
