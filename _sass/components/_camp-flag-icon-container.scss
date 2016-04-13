@@ -3,7 +3,12 @@
   width: 150px;
   height: 125px;
   vertical-align: top;
-  padding-left: 150px;
-  padding-right: 50px;
-  border-bottom: 1px solid rgba($primary-color, .5);
+  padding-left: 75px;
+  padding-right: 25px;
+  border-bottom: 1px solid rgba($primary-color, .3);
+  display: none;
+
+  @media (min-width: 950px) {
+    display: block;
+  }
 }
