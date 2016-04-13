@@ -1,0 +1,23 @@
+.text-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 550px) {
+    flex-direction: row;
+  }
+}
+
+  .text-icon-container-text {
+  }
+
+  .text-icon-container-icon {
+    margin: 45px 35px 45px 45px;
+    height: 138px;
+    width: 138px;
+
+    @media (min-width: 700px) {
+      height: 175px;
+      width: 175px;
+    }
+  }

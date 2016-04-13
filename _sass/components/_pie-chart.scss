@@ -6,11 +6,10 @@ Note: Current code does not work for percentages greater than 50%. The article
 
 .pie-chart {
   position: relative;
-  width: 138px;
-  height: 138px;
+  width: inherit;
+  height: inherit;
   border-radius: 50%;
   background: darken($grey-background-color, 6%);
-  margin: 2rem auto;
   background-image:
   linear-gradient(to right, transparent 50%, $primary-color 0);
 }
