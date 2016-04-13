@@ -1,9 +1,12 @@
+$header-hidden-nav-height: 112px;
+$header-displayed-nav-height: 150px;
+
 .header {
   @media (min-width: $hide-nav-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 112px;
+    height: $header-displayed-nav-height;
     box-sizing: border-box;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
@@ -14,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 112px;
+    height: $header-hidden-nav-height;
     box-sizing: border-box;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
