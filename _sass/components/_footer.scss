@@ -1,36 +1,55 @@
+$footer-become-horizontal: 600px;
+
 .footer {
   background-color: $grey-background-color;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  
+
   @include m-cancel-content-margin();
   @include m-content-padding();
 }
 
-  .footer-section {
-    border-bottom: 1px solid darken($grey-background-color, 20%);
-    margin-top: 1rem;
-    padding-bottom: 1.5rem;
+  .footer-content {
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $footer-become-horizontal) {
+      flex-direction: row;
+    }
   }
 
-  .footer-section:last-child {
-    border-bottom: none;
-  }
+    .footer-content-section {
+      flex: 1;
+      border-bottom: 1px solid darken($grey-background-color, 20%);
+      margin-top: 1rem;
+      padding-bottom: 1.5rem;
 
-    .footer-section-text {
-      color: darken($grey-background-color, 30%);
-      margin: 0;
+      @media (min-width: $footer-become-horizontal) {
+        border-bottom: 0;
+      }
     }
 
-    .footer-section-social-icons {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      padding-top: 1rem;
-      width: 5rem;
+    .footer-content-section:last-child {
+      border-bottom: none;
     }
 
-    .footer-section-jumpstart-logo {
-      width: 150px;
-      height: 60px;
-    }
+      .footer-content-section-text {
+        color: darken($grey-background-color, 30%);
+        margin: 0;
+      }
+
+      .footer-content-section-social-icons {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        width: 5rem;
+      }
+
+      .footer-content-section-jumpstart-logo {
+        width: 150px;
+        height: 60px;
+      }
