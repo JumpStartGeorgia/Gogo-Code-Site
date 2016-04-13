@@ -1,0 +1,33 @@
+$support-text-become-horizontal: 900px;
+
+.support-section {
+  position: relative;
+}
+
+  .support-section-text {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $support-text-become-horizontal) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+    .support-section-text-section {
+      @media (min-width: $support-text-become-horizontal) {
+        width: 50%;
+        padding-right: 2rem;
+      }
+    }
+
+  .support-section-donate {
+    float: right;
+    margin-bottom: 1rem;
+
+    @media (min-width: $support-text-become-horizontal) {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }

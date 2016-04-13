@@ -4,6 +4,7 @@ $footer-become-horizontal: 600px;
   background-color: $grey-background-color;
   padding-bottom: 1rem;
   padding-top: 1rem;
+  clear: both;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
