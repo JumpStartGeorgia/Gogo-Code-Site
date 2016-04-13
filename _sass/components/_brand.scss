@@ -1,7 +1,6 @@
 .brand {
   background: 20% 25%/200% auto scroll no-repeat darken($grey-background-color, 30%) url($site-baseurl + '/assets/images/Brand-Description-Background-Girl-At-Computer.jpg');
   height: 300px;
-  padding-top: 2rem;
   padding-bottom: 1rem;
 
   @include m-cancel-content-margin();
@@ -20,8 +19,9 @@
     .brand-description {
       color: white;
       margin: 0;
-      max-width: 250px;
+      width: 250px;
+      max-width: 60%;
       position: absolute;
-      bottom: 0;
-
+      bottom: 20px;
+      left: 0;
     }
