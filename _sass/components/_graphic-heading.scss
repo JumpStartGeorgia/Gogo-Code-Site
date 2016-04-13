@@ -1,14 +1,32 @@
 .graphic-heading {
   background: url($site-baseurl + '/assets/images/Girl-Studying-At-Computer.jpg');
+  height: 300px;
+  position: relative;
+
+  @media (min-width: $graphic-list-become-horizontal) {
+    height: inherit;
+  }
+}
+
+.graphic-heading::before {
+  content: '';
+  display: block;
+  height: inherit;
+  width: inherit;
+  background-color: rgba($secondary-color, .7);
+
+  @media (max-width: $graphic-list-become-horizontal) {
+    @include m-cancel-content-margin();
+    @include m-content-padding();
+  }
 }
 
   .graphic-heading-container {
-    background-color: rgba($secondary-color, .7);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    @include m-cancel-content-margin();
-    @include m-content-padding();
+    width: 270px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
     .graphic-heading-container-icon {
@@ -29,7 +47,7 @@
 .graphic-heading.mod-after-camp {
   background: url($site-baseurl + '/assets/images/Instructor-Helping-Student-At-Computer.jpg');
 
-  .graphic-heading-container {
+  &::before {
     background-color: rgba($tertiary-color, .7);
   }
 }

@@ -1,6 +1,11 @@
 .list-block {
   padding: 2rem 1rem;
   background-color: $grey-background-color;
+  height: inherit;
+
+  @media (min-width: $graphic-list-become-horizontal) {
+    border-top: 3px solid lighten($primary-color, 45%);
+  }
 }
 
   .list-block-heading {
