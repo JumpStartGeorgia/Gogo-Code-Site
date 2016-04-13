@@ -1,0 +1,11 @@
+.graphic-list-container {
+  @media (min-width: $graphic-list-become-horizontal) {
+    display: flex;
+  }
+}
+
+  .graphic-list-container-item {
+    @media (min-width: $graphic-list-become-horizontal) {
+      flex: 1;
+    }
+  }

@@ -1,11 +1,6 @@
 .brand {
-  background-color: darken($grey-background-color, 30%);
-  background-image: url($site-baseurl + '/assets/images/Brand-Description-Background-Girl-At-Computer.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: 20% 25%;
-  background-size: 200% auto;
-
+  background: 20% 25%/200% auto scroll no-repeat darken($grey-background-color, 30%) url($site-baseurl + '/assets/images/Brand-Description-Background-Girl-At-Computer.jpg');
+  height: 300px;
   padding-top: 2rem;
   padding-bottom: 1rem;
 
@@ -13,9 +8,20 @@
   @include m-content-padding();
 }
 
-  .brand-description {
-    color: white;
-    margin: 0;
-    width: 50%;
-    max-width: 500px;
+  .brand-content {
+    height: 100%;
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
   }
+
+    .brand-description {
+      color: white;
+      margin: 0;
+      max-width: 250px;
+      position: absolute;
+      bottom: 0;
+
+    }
