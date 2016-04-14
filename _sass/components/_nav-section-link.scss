@@ -7,10 +7,11 @@
   text-decoration: none;
   text-transform: lowercase;
   text-align: center;
-  min-width: 8rem;
+  min-width: 7rem;
 
   @media (min-width: $hide-nav-width) {
     min-width: initial;
+    padding: 0 0.5rem;
 
     // Necessary to insert invisible brackets so that hovering doesn't
     // change content box width
@@ -38,7 +39,6 @@
 .nav-section-link:active {
   background-color: $primary-color;
   color: white;
-  min-width: 8rem;
   text-align: center;
 
   @include m-surround-with-brackets();

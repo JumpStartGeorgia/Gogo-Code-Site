@@ -5,8 +5,8 @@
   font-family: $secondary-font-family;
   font-size: 1.3rem;
   font-weight: 200;
-  width: 8rem;
-  padding: 0.8rem 0;
+  width: 7rem;
+  padding: 0.65rem 0;
   text-align: center;
   text-decoration: none;
   text-transform: lowercase;
@@ -14,5 +14,5 @@
 
 .call-to-action:hover {
   @include m-surround-with-brackets();
-  background-color: darken($secondary-color, 5%);
+  background-color: darken($secondary-color, 3%);
 }
