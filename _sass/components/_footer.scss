@@ -16,6 +16,8 @@ $footer-become-horizontal: 600px;
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 
     @media (min-width: $footer-become-horizontal) {
       flex-direction: row;
