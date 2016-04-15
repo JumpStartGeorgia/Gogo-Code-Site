@@ -14,50 +14,64 @@ $footer-become-horizontal: 600px;
     max-width: $max-content-width;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
     font-size: 0.9rem;
-    line-height: 1.5rem;
     box-sizing: border-box;
-
-    @media (min-width: $footer-become-horizontal) {
-      flex-direction: row;
-      justify-content: space-between;
-      padding-right: 36%;
-    }
+    line-height: 1.5rem;
   }
 
-    .footer-content-section {
-      flex: 9;
-      border-bottom: 1px solid darken($grey-background-color, 20%);
-      margin-top: 1rem;
-      padding-bottom: 1.5rem;
-      box-sizing: border-box;
+    // It is necessary to have another wrapper div in order to limit the
+    // width of both footer content sections within the already limited
+    // $max-content-width.
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
 
       @media (min-width: $footer-become-horizontal) {
-        border-bottom: 0;
-      }
-    }
-
-    .footer-content-section:last-child {
-      flex: 11;
-      border-bottom: none;
-    }
-
-      .footer-content-section-text {
-        color: darken($grey-background-color, 30%);
-        margin: 0;
-      }
-
-      .footer-content-section-social-icons {
-        align-items: center;
-        display: flex;
+        flex-direction: row;
+        max-width: 590px;
         justify-content: space-between;
-        padding-top: 1rem;
-        width: 5rem;
+      }
+    }
+
+      .footer-content-wrapper-section {
+        flex: 9;
+        border-bottom: 1px solid darken($grey-background-color, 20%);
+        margin-top: 1rem;
+        padding-bottom: 1.5rem;
+        box-sizing: border-box;
+
+        @media (min-width: $footer-become-horizontal) {
+          border-bottom: 0;
+        }
       }
 
-      .footer-content-section-jumpstart-logo {
-        width: 150px;
-        height: 60px;
+      .footer-content-wrapper-section:last-child {
+        flex: 11;
+        border-bottom: none;
       }
+
+        .footer-content-wrapper-section-text {
+          @media (min-width: $footer-become-horizontal) {
+            // Makes the social media icons line up with the JumpStart logo
+            min-height: 6.5rem;
+          }
+        }
+
+          .footer-content-wrapper-section-text-line {
+            color: darken($grey-background-color, 30%);
+            margin: 0;
+          }
+
+        .footer-content-wrapper-section-social-icons {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          width: 5rem;
+          height: 40px;
+        }
+
+        .footer-content-wrapper-section-jumpstart-logo {
+          $jumpstart-logo-width: 100px;
+          width: $jumpstart-logo-width;
+          height: .4 * $jumpstart-logo-width;
+        }
