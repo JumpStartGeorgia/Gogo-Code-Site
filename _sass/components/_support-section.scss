@@ -15,9 +15,19 @@ $support-text-become-horizontal: 900px;
   }
 
     .support-section-text-section {
+      box-sizing: border-box;
+    }
+
+    .support-section-text-section:first-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 50%;
+        width: 59%;
         padding-right: 2rem;
+      }
+    }
+
+    .support-section-text-section:last-child {
+      @media (min-width: $support-text-become-horizontal) {
+        width: 41%;
       }
     }
 
