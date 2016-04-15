@@ -9,3 +9,8 @@
   font-weight: 200;
   src: url($site-baseurl + '/assets/fonts/Dejavu Neue Extra Light.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Playbill';
+  src: url($site-baseurl + '/assets/fonts/Playbill.ttf') format('truetype');
+}

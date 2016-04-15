@@ -60,13 +60,18 @@
     .coding-awesome-section-content-quote:before {
       content: '“';
       position: absolute;
-      font-size: 7em;
-      left: -40px;
+      font-family: 'Playbill';
+      font-size: 20rem;
+      left: -88px;
+      top: 47px;
     }
 
     .coding-awesome-section-content-quote:after {
       content: '”';
       position: absolute;
-      font-size: 7em;
-      right: 60px;
+      font-family: 'Playbill';
+      font-size: 20rem;
+      opacity: .5;
+      right: 53px;
+      bottom: -59px;
     }
