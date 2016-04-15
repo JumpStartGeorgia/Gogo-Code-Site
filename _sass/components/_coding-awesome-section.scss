@@ -1,9 +1,17 @@
 .coding-awesome-section {
   background: url($site-baseurl + '/assets/images/Computer-Coding-Is-Awesome.jpg');
-  padding-bottom: 3rem;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
+
+  @media (min-width: 500px) {
+    height: 600px;
+  }
 }
 
   .coding-awesome-section-intro {
@@ -23,9 +31,27 @@
       margin-bottom: 1rem;
     }
 
-  .coding-awesome-section-quote {
-    color: white;
-    opacity: .5;
+  .coding-awesome-section-content {
     font-size: 1.2rem;
-    margin-top: 5rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: 500px) {
+      font-size: 1.3rem;
+    }
   }
+
+    .coding-awesome-section-content-quote {
+      color: white;
+      font-weight: 200;
+      line-height: 1.5em;
+      opacity: .7;
+      max-width: 392px;
+      padding-bottom: 2em;
+    }
