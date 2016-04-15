@@ -62,8 +62,13 @@
       position: absolute;
       font-family: 'Playbill';
       font-size: 20rem;
-      left: -88px;
-      top: 47px;
+      left: -13px;
+      top: 12px;
+
+      @media (min-width: 500px) {
+        left: -88px;
+        top: 47px;
+      }
     }
 
     .coding-awesome-section-content-quote:after {
