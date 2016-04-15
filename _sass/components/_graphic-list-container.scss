@@ -10,3 +10,13 @@
       height: 325px;
     }
   }
+
+.graphic-list-container.mod-after-camp {
+
+  .graphic-list-container-item {
+    @media (min-width: $graphic-list-become-horizontal) {
+      height: 250px;
+    }
+  }
+
+}
