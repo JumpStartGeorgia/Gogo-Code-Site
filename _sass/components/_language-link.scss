@@ -16,10 +16,14 @@
 }
 
 .language-link.mod-georgian {
-  font-family: 'Dejavu Neue';  
+  font-family: 'Dejavu Neue';
 }
 
 .language-link.is-active {
   color: $secondary-color;
   font-weight: 400;
+}
+
+.language-link.is-active:hover {
+  color: darken($secondary-color, 5%);
 }
