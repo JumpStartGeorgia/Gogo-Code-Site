@@ -9,6 +9,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    autoprefixer-rails (6.3.6)
+      execjs
     byebug (8.2.2)
     coderay (1.1.1)
     coffee-script (2.4.1)
@@ -107,9 +109,15 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
+    octopress-autoprefixer (1.0.2)
+      autoprefixer-rails
+      jekyll (>= 2.0)
+      octopress-hooks (~> 2.0)
     octopress-debugger (1.0.2)
       jekyll
       pry-byebug
+    octopress-hooks (2.6.1)
+      jekyll (>= 2.0)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -143,4 +151,5 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 67)
   json
+  octopress-autoprefixer (~> 1.0, >= 1.0.1)
   octopress-debugger (~> 1.0, >= 1.0.2)
