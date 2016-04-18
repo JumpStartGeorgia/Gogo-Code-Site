@@ -5,7 +5,7 @@
   height: inherit;
 
   @media (min-width: $graphic-list-become-horizontal) {
-    border-top: 3px solid lighten($primary-color, 45%);
+    border-top: $border-top-colored;
   }
 
   @media (min-width: 950px) {
