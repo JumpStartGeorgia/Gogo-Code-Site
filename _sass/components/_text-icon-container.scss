@@ -17,11 +17,15 @@
 .text-icon-container.mod-pie-chart {
 
   .text-icon-container-icon {
-    margin: 45px 35px 45px 45px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-right: 35px;
+    margin-left: 35px;
     height: 138px;
     width: 138px;
 
     @media (min-width: 700px) {
+      margin-left: 45px;
       height: 175px;
       width: 175px;
     }
