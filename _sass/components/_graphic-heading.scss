@@ -44,6 +44,22 @@
       margin: 0;
     }
 
+  $graphic-heading-triangle-base: 7px;
+  $graphic-heading-triangle-height: 14px;
+
+  .graphic-heading-triangle {
+    position: absolute;
+    bottom: -1 * $graphic-heading-triangle-height;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: $graphic-heading-triangle-base solid transparent;
+    border-right: $graphic-heading-triangle-base solid transparent;
+
+    border-top: $graphic-heading-triangle-height solid rgba($secondary-color, .7);
+  }
+
 .graphic-heading.mod-after-camp {
   background: url($site-baseurl + '/assets/images/Instructor-Helping-Student-At-Computer.jpg');
 
