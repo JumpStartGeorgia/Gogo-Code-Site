@@ -7,6 +7,11 @@
   @media (min-width: $graphic-list-become-horizontal) {
     border-top: 3px solid lighten($primary-color, 45%);
   }
+
+  @media (min-width: 950px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
   .list-block-heading {
