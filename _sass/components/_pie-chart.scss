@@ -4,14 +4,16 @@ Note: Current code does not work for percentages greater than 50%. The article
       above describes a way to fix that.
 */
 
+$pie-chart-filled-color: #665db5;
+
 .pie-chart {
   position: relative;
   width: inherit;
   height: inherit;
   border-radius: 50%;
-  background: darken($grey-background-color, 6%);
+  background: #e6e6e6;
   background-image:
-  linear-gradient(to right, transparent 50%, $primary-color 0);
+  linear-gradient(to right, transparent 50%, $pie-chart-filled-color 0);
 }
 
 .pie-chart::before {
@@ -26,7 +28,7 @@ Note: Current code does not work for percentages greater than 50%. The article
 }
 
   .pie-chart-label {
-    color: $primary-color;
+    color: $pie-chart-filled-color;
     font-size: 1.3rem;
     font-weight: 600;
     position: absolute;
