@@ -1,4 +1,5 @@
 $graphic-heading-during-camp-color: rgba($secondary-color, .7);
+$graphic-heading-after-camp-color: rgba($tertiary-color, .7);
 $graphic-heading-triangle-base: 7px;
 $graphic-heading-triangle-height: 14px;
 
@@ -75,6 +76,15 @@ $graphic-heading-triangle-height: 14px;
   background: url($site-baseurl + '/assets/images/Instructor-Helping-Student-At-Computer.jpg');
 
   &::before {
-    background-color: rgba($tertiary-color, .7);
+    background-color: $graphic-heading-after-camp-color;
+  }
+
+  .graphic-heading-triangle {
+    border-top: $graphic-heading-triangle-height solid $graphic-heading-after-camp-color;
+
+    @media (min-width: $graphic-list-become-horizontal) {
+      border-top: $graphic-heading-triangle-base solid transparent;
+      border-left: $graphic-heading-triangle-height solid $graphic-heading-after-camp-color;
+    }
   }
 }
