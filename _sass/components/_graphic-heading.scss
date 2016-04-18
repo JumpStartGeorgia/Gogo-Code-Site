@@ -1,3 +1,7 @@
+$graphic-heading-during-camp-color: rgba($secondary-color, .7);
+$graphic-heading-triangle-base: 7px;
+$graphic-heading-triangle-height: 14px;
+
 .graphic-heading {
   background: url($site-baseurl + '/assets/images/Girl-Studying-At-Computer.jpg');
   height: 225px;
@@ -13,7 +17,7 @@
   display: block;
   height: inherit;
   width: inherit;
-  background-color: rgba($secondary-color, .7);
+  background-color: $graphic-heading-during-camp-color;
 
   @media (max-width: $graphic-list-become-horizontal) {
     @include m-cancel-content-margin();
@@ -44,20 +48,27 @@
       margin: 0;
     }
 
-  $graphic-heading-triangle-base: 7px;
-  $graphic-heading-triangle-height: 14px;
-
   .graphic-heading-triangle {
     position: absolute;
-    bottom: -1 * $graphic-heading-triangle-height;
-    transform: translate(-50%, 0%);
-    left: 50%;
+    bottom: 0;
+    transform: translate(50%, 100%);
+    right: 50%;
     width: 0;
     height: 0;
     border-left: $graphic-heading-triangle-base solid transparent;
     border-right: $graphic-heading-triangle-base solid transparent;
+    border-top: $graphic-heading-triangle-height solid $graphic-heading-during-camp-color;
 
-    border-top: $graphic-heading-triangle-height solid rgba($secondary-color, .7);
+    @media (min-width: $graphic-list-become-horizontal) {
+      bottom: 50%;
+      right: 0;
+      transform: translate(100%, 50%);
+
+      border-right: 0;
+      border-top: $graphic-heading-triangle-base solid transparent;
+      border-bottom: $graphic-heading-triangle-base solid transparent;
+      border-left: $graphic-heading-triangle-height solid $graphic-heading-during-camp-color;
+    }
   }
 
 .graphic-heading.mod-after-camp {
