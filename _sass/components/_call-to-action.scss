@@ -16,3 +16,16 @@
   @include m-surround-with-brackets();
   background-color: darken($secondary-color, 3%);
 }
+
+// The color of the button looks lighter in a darker color context,
+// so it is necessary to use a darker color
+
+$call-to-action-dark-background-color: darken($secondary-color, 3%);
+
+.call-to-action.mod-dark-background {
+  background-color: $call-to-action-dark-background-color;
+
+  &:hover {
+    background-color: darken($call-to-action-dark-background-color, 3%);
+  }
+}
