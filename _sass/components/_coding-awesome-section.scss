@@ -79,4 +79,8 @@
       opacity: .5;
       left: 229px;
       bottom: -59px;
+
+      @media (min-width: 500px) {
+        left: 251px;
+      }
     }
