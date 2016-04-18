@@ -1,4 +1,7 @@
 .graphic-list-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
   @media (min-width: $graphic-list-become-horizontal) {
     display: flex;
   }

@@ -31,6 +31,17 @@ $support-text-become-horizontal: 900px;
       }
     }
 
+      .support-section-text-section-content {
+        padding-left: 1rem;
+        border-left: $border-left-colored;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+
+        @media (min-width: 800px) {
+          margin-top: 2rem;
+        }
+      }
+
   .support-section-donate {
     float: right;
     margin-bottom: 1rem;
@@ -38,6 +49,6 @@ $support-text-become-horizontal: 900px;
     @media (min-width: $support-text-become-horizontal) {
       position: absolute;
       right: 0;
-      top: 0;
+      top: -6px;
     }
   }
