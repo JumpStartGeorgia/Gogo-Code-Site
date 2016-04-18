@@ -2,6 +2,9 @@
   padding: 0.8em 0;
   background-color: $grey-background-color;
 
+  @include m-cancel-content-margin();
+  @include m-content-padding();
+
   @media (min-width: $hide-nav-width) {
     background-color: inherit;
   }
