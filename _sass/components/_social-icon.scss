@@ -1,0 +1,11 @@
+.social-icon {
+  height: 24px;
+  width: 24px;
+  color: $primary-color;
+  fill: currentColor;
+}
+
+.social-icon:hover {
+  color: $footer-background-color;
+  background-color: $primary-color;
+}
