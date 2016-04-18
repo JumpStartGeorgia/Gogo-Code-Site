@@ -20,14 +20,14 @@ $support-text-become-horizontal: 900px;
 
     .support-section-text-section:first-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 59%;
+        width: 56.9%;
         padding-right: 2rem;
       }
     }
 
     .support-section-text-section:last-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 41%;
+        width: 43.1%;
       }
     }
 
