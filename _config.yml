@@ -19,5 +19,5 @@ github_username: JumpStartGeorgia
 # Build settings
 markdown: kramdown
 
-gems:
-  - octopress-autoprefixer
+# gems:
+  # - octopress-autoprefixer
