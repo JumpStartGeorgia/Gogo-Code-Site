@@ -42,3 +42,11 @@
     .main-nav-list-item.mod-normal-link {
       padding: 0.8rem 0.1rem;
     }
+
+    .main-nav-list-item.mod-donate {
+      padding-bottom: 0.4rem;
+
+      @media (min-width: $hide-nav-width) {
+        padding-bottom: 0.8rem;
+      }
+    }

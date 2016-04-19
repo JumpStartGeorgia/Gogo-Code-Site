@@ -51,6 +51,8 @@ $footer-become-horizontal: 600px;
       }
 
         .footer-content-wrapper-section-text {
+          padding-bottom: 0.5rem;
+          
           @media (min-width: $footer-become-horizontal) {
             // Makes the social media icons line up with the JumpStart logo
             min-height: 8rem;
