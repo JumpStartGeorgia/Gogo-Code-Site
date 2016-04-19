@@ -15,7 +15,7 @@
   margin-bottom: 2rem;
   padding-top: 2rem;
   background: $grey-background-color;
-  border-top: $border-top-colored;
+  border-top: 3px solid #ebeaf2;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
