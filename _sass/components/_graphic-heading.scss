@@ -35,8 +35,8 @@ $graphic-heading-triangle-height: 14px;
     width: 270px;
     margin: auto;
     z-index: 100;
-
     font-size: 2rem;
+    padding-top: 1rem;
 
     @media (min-width: $graphic-list-become-horizontal) {
       width: 320px;
@@ -54,7 +54,7 @@ $graphic-heading-triangle-height: 14px;
       text-align: center;
       text-transform: uppercase;
       font-family: $secondary-font-family;
-      font-weight: 200;
+      font-weight: 100;
       margin: 0;
       margin-top: 0.2em;
     }
