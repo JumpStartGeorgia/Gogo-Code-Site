@@ -1,6 +1,6 @@
 .list-block {
   box-sizing: border-box;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   background-color: $grey-background-color;
   height: inherit;
   border-bottom: 3px solid #f1f0f4;
@@ -39,8 +39,10 @@
       float: left;
       margin: 0;
       margin-left: -0.7em;
-      margin-top: -0.65rem;
+      margin-top: 0.6rem;
       width: 0.7em;
+      height: 0.7em;
       font-size: 2rem;
-      content: '•';
+      content: '';
+      background: url($site-baseurl + '/assets/images/list-bullet-point.svg') no-repeat;
     }
