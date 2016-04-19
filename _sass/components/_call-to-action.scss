@@ -3,10 +3,11 @@
   color: white;
   display: block;
   font-family: $secondary-font-family;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
   width: 7rem;
-  padding: 0.65rem 0;
+  padding: 0.8rem 0.5rem;
+  letter-spacing: 0.02em;
   text-align: center;
   text-decoration: none;
   text-transform: lowercase;
@@ -28,4 +29,9 @@ $call-to-action-dark-background-color: darken($secondary-color, 3%);
   &:hover {
     background-color: darken($call-to-action-dark-background-color, 5%);
   }
+}
+
+.call-to-action.mod-navigation {
+  font-size: 1.25rem;
+  padding: 0.65rem 0;
 }
