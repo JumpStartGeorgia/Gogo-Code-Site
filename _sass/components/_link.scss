@@ -1,9 +1,9 @@
 .link {
   color: $secondary-color;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .link:hover {
-  color: $primary-color;
+  color: darken($secondary-color, 10%);
 }
