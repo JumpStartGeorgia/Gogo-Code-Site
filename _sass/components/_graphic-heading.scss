@@ -7,6 +7,7 @@ $graphic-heading-triangle-height: 14px;
   background: url($site-baseurl + '/assets/images/Girl-Studying-At-Computer.jpg');
   height: 225px;
   position: relative;
+  display: flex;
 
   @media (min-width: $graphic-list-become-horizontal) {
     height: inherit;
@@ -14,11 +15,15 @@ $graphic-heading-triangle-height: 14px;
 }
 
 .graphic-heading::before {
+  position: absolute;
+  left: 0;
+  right: 0;
   content: '';
   display: block;
   height: inherit;
   width: inherit;
   background-color: $graphic-heading-during-camp-color;
+  z-index: 10;
 
   @media (max-width: $graphic-list-become-horizontal) {
     @include m-cancel-content-margin();
@@ -28,14 +33,19 @@ $graphic-heading-triangle-height: 14px;
 
   .graphic-heading-container {
     width: 270px;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 100;
+
+    font-size: 2rem;
+
+    @media (min-width: $graphic-list-become-horizontal) {
+      width: 320px;
+      font-size: 2.5rem;
+    }
   }
 
     .graphic-heading-container-icon {
-      width: 100px;
+      width: 37%;
       margin: 0 auto;
     }
 
@@ -44,9 +54,9 @@ $graphic-heading-triangle-height: 14px;
       text-align: center;
       text-transform: uppercase;
       font-family: $secondary-font-family;
-      font-size: 2.5rem;
       font-weight: 200;
       margin: 0;
+      margin-top: 0.2em;
     }
 
   .graphic-heading-triangle {
