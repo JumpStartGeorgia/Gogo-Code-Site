@@ -3,9 +3,11 @@
   padding: 2rem 1rem;
   background-color: $grey-background-color;
   height: inherit;
+  border-bottom: 3px solid #f1f0f4;
 
   @media (min-width: $graphic-list-become-horizontal) {
     border-top: 3px solid #f1f0f4;
+    border-bottom: 0;
   }
 
   @media (min-width: 950px) {
