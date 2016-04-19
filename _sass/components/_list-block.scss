@@ -23,6 +23,7 @@
 
   .list-block-list {
     margin: 0.5rem 0;
+    margin-left: -1.25rem;
   }
 
     .list-block-list-item {
@@ -35,9 +36,9 @@
       color: $primary-color;
       float: left;
       margin: 0;
-      margin-left: -1em;
+      margin-left: -0.7em;
       margin-top: -0.65rem;
-      width: 1em;
+      width: 0.7em;
       font-size: 2rem;
-      content: '\2022';
+      content: '•';
     }
