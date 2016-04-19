@@ -33,7 +33,7 @@
     }
 
     .list-block-list-item:before {
-      color: $primary-color;
+      color: lighten($primary-color, 3%);
       float: left;
       margin: 0;
       margin-left: -0.7em;
