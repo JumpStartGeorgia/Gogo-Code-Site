@@ -1,0 +1,77 @@
+<header class='header u-limit-content-width'>
+
+  <h1 class='u-visually-hidden'>
+    Header
+  </h1>
+
+  <div class='header-mobile'>
+
+    <div class='header-mobile-brand'>
+      {% include icons/gogo-code-logo.svg %}
+    </div>
+
+    <button class='nav-toggle-button js-toggle-navigation'>
+      <span class='nav-toggle-button-icon-bar'></span>
+      <span class='nav-toggle-button-icon-bar'></span>
+      <span class='nav-toggle-button-icon-bar'></span>
+    </button>
+
+  </div>
+
+  <nav class='main-nav is-hidden-on-mobile js-act-as-navigation'>
+    <h2 class='u-visually-hidden'>
+      Primary Navigation
+    </h2>
+
+    <ul class='main-nav-list'>
+
+      <li class='main-nav-list-item mod-normal-link'>
+        <a class='nav-section-link' href='{{ "/#about" | prepend: site.baseurl }}'>
+          შესახებ
+        </a>
+      </li>
+
+      <li class='main-nav-list-item mod-normal-link'>
+        <a class='nav-section-link' href='{{ "/#why-coding" | prepend: site.baseurl }}'>
+          რატომ პროგრამირება
+        </a>
+      </li>
+
+      <li class='main-nav-list-item mod-normal-link'>
+        <a class='nav-section-link' href='{{ "/#support" | prepend: site.baseurl }}'>
+          მხარდაჭერა
+        </a>
+      </li>
+
+      <li class='main-nav-list-item mod-normal-link'>
+        <a class='nav-section-link' href='{{ "/#team" | prepend: site.baseurl }}'>
+          გუნდი
+        </a>
+      </li>
+
+      <li class='main-nav-list-item mod-normal-link'>
+        <a class='nav-section-link' href='{{ "/#contact" | prepend: site.baseurl }}'>
+          კონტაქტი
+        </a>
+      </li>
+
+      <li class='main-nav-list-item mod-donate'>
+        <a class='call-to-action mod-navigation' href='{{ "/#" | prepend: site.baseurl }}'>
+          შემოწირულობა
+        </a>
+      </li>
+
+      <li class='main-nav-list-item'>
+        <a class='language-link mod-georgian is-active' href='{{ "/ka" | prepend: site.baseurl }}'>
+          ქა
+        </a>
+
+        <a class='language-link' href='{{ "/" | prepend: site.baseurl }}'>
+          En
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+</header>
