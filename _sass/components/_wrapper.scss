@@ -3,7 +3,7 @@
     color: $text-color;
     background-color: $background-color;
     @include m-content-padding();
-    
+
     margin: 0 auto;
 
     -webkit-text-size-adjust: 100%;
@@ -12,4 +12,8 @@
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+}
+
+:lang(ka) {
+  font-family: $georgian-font-family;
 }
