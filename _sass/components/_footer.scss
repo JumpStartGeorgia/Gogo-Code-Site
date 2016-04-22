@@ -3,11 +3,15 @@ $footer-become-horizontal: 600px;
 .footer {
   background-color: $footer-background-color;
   padding-bottom: 0.9rem;
-  padding-top: 0.9rem;
+  padding-top: 0;
   clear: both;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
+
+  @media (min-width: 600px) {
+    padding-top: 0.9rem;
+  }
 }
 
   .footer-content {
