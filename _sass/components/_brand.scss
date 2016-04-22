@@ -1,19 +1,19 @@
 .brand {
   background: 20% 25%/200% auto scroll no-repeat darken($grey-background-color, 30%) url($site-baseurl + '/assets/images/Brand-Description-Background-Girl-At-Computer.jpg');
   height: 300px;
-  padding-bottom: 1rem;
+  padding-bottom: 0.9rem;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
 
   @media (min-width: 750px) {
     height: 400px;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   @media (min-width: 1000px) {
     height: 550px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 

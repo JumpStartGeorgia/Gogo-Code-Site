@@ -1,6 +1,6 @@
 .list-block {
   box-sizing: border-box;
-  padding: 2rem 1.5rem;
+  padding: 1.77rem 1.33rem;
   background-color: $grey-background-color;
   height: inherit;
   border-bottom: 3px solid #f1f0f4;
@@ -11,27 +11,27 @@
   }
 
   @media (min-width: 950px) {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3.55rem;
+    padding-right: 3.55rem;
   }
 }
 
   .list-block-heading {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 600;
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.88rem;
   }
 
   .list-block-list {
-    margin: 0.5rem 0;
-    margin-left: -1rem;
+    margin: 0.44rem 0;
+    margin-left: -0.88rem;
   }
 
     .list-block-list-item {
       color: black;
       list-style-type: none;
-      margin: 0.5rem 0;
+      margin: 0.44rem 0;
     }
 
     .list-block-list-item:before {
@@ -39,10 +39,10 @@
       float: left;
       margin: 0;
       margin-left: -0.7em;
-      margin-top: 0.6rem;
+      margin-top: 0.53rem;
       width: 0.7em;
       height: 0.7em;
-      font-size: 2rem;
+      font-size: 1.77rem;
       content: '';
       background: url($site-baseurl + '/assets/images/list-bullet-point.svg') no-repeat;
     }

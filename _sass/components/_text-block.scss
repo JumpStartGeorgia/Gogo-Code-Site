@@ -1,15 +1,15 @@
 .text-block {
-  padding-left: 1rem;
+  padding-left: 0.89rem;
   border-left: $border-left-colored;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.77rem;
+  margin-bottom: 1.77rem;
 
   @media (min-width: 800px) {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 1.77rem;
+    margin-bottom: 2.66rem;
   }
 }
 
 .text-block.mod-no-bottom-margin {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }

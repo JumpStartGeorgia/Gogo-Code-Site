@@ -3,18 +3,18 @@
   font-family: $secondary-font-family;
   font-weight: 400;
   text-transform: lowercase;
-  font-size: 1.6rem;
-  margin: 1rem 0;
+  font-size: 1.43rem;
+  margin: 0.88rem 0;
 
   @include m-surround-with-brackets();
 
   // Prevents heading brackets from wrapping to next line on small screen
   @media (max-width: 350px) {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   @media (max-width: 310px) {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -24,6 +24,6 @@
 
   .heading.mod-footer {
     margin-top: 0;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     color: #8c78a2;
   }

@@ -2,17 +2,17 @@
   color: darken($grey-background-color, 40%);
   display: block;
   font-family: $secondary-font-family;
-  font-size: 1.1rem;
+  font-size: 0.97rem;
   font-weight: 300;
   text-decoration: none;
   text-transform: lowercase;
   text-align: center;
-  min-width: 7rem;
+  min-width: 6.2rem;
 
   @media (min-width: $hide-nav-width) {
     color: #7f7a84;
     min-width: initial;
-    padding: 0 0.5rem;
+    padding: 0 0.44rem;
 
     // Necessary to insert invisible brackets so that hovering doesn't
     // change content box width

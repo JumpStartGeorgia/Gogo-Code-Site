@@ -21,7 +21,7 @@ $support-text-become-horizontal: 900px;
     .support-section-text-section:first-child {
       @media (min-width: $support-text-become-horizontal) {
         width: 56.9%;
-        padding-right: 2rem;
+        padding-right: 1.77rem;
       }
     }
 
@@ -32,19 +32,19 @@ $support-text-become-horizontal: 900px;
     }
 
       .support-section-text-section-content {
-        padding-left: 1rem;
+        padding-left: 0.89rem;
         border-left: $border-left-colored;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
+        margin-top: 0.89rem;
+        margin-bottom: 0;
 
         @media (min-width: 800px) {
-          margin-top: 2rem;
+          margin-top: 1.77rem;
         }
       }
 
   .support-section-donate {
     float: right;
-    margin-bottom: 1rem;
+    margin-bottom: 0.89rem;
 
     @media (min-width: $support-text-become-horizontal) {
       position: absolute;

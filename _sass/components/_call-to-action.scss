@@ -3,10 +3,10 @@
   color: white;
   display: block;
   font-family: $secondary-font-family;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 300;
-  width: 7rem;
-  padding: 0.8rem 0.5rem;
+  width: 6.2rem;
+  padding: 0.72rem 0.45rem;
   letter-spacing: 0.02em;
   text-align: center;
   text-decoration: none;
@@ -32,6 +32,6 @@ $call-to-action-dark-background-color: darken($secondary-color, 3%);
 }
 
 .call-to-action.mod-navigation {
-  font-size: 1.25rem;
-  padding: 0.65rem 0;
+  font-size: 1.1rem;
+  padding: 0.6rem 0 0.6rem;
 }

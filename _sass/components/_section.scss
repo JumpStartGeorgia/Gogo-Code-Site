@@ -1,20 +1,20 @@
 .section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.77rem;
+  margin-bottom: 1.77rem;
 }
 
 .section.mod-about {
-  margin-bottom: 1rem;
+  margin-bottom: 0.89rem;
   @media (min-width: $graphic-list-become-horizontal) {
-    margin-top: 2.5rem;
-    margin-bottom: 3rem;
+    margin-top: 2.22rem;
+    margin-bottom: 2.67rem;
   }
 }
 
 .section.mod-why-coding {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
+  margin-top: 0.89rem;
+  margin-bottom: 1.77rem;
+  padding-top: 1.77rem;
   background: $grey-background-color;
   border-top: 3px solid #ebeaf2;
 
@@ -23,11 +23,11 @@
 }
 
 .section.mod-support {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.33rem;
+  margin-bottom: 1.33rem;
 
   @media (min-width: 800px) {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.77rem;
+    margin-bottom: 1.77rem;
   }
 }

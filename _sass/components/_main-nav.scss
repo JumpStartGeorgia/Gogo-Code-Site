@@ -1,5 +1,5 @@
 .main-nav {
-  padding: 0.8em 0;
+  padding: 0.86em 0 0.8em;
   background-color: $grey-background-color;
 
   @include m-cancel-content-margin();
@@ -30,7 +30,7 @@
   }
 
     .main-nav-list-item {
-      padding: 0.8rem;
+      padding: 0.7rem;
       list-style-type: none;
       margin: 0 auto;
 
@@ -40,11 +40,11 @@
     }
 
     .main-nav-list-item.mod-normal-link {
-      padding: 0.8rem 0.1rem;
+      padding: 0.7rem 0.09rem;
     }
 
     .main-nav-list-item.mod-donate {
-      padding-bottom: 0.4rem;
+      padding-bottom: 0.35rem;
 
       @media (min-width: $hide-nav-width) {
         padding-bottom: 0.8rem;
