@@ -1,5 +1,7 @@
 html {
-    font: 400 18px/1.5 $primary-font-family;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
 
@@ -11,7 +13,14 @@ html {
     font-kerning: normal;
 }
 
-html:lang(ka) {
+:lang(en) {
+  font-family: $primary-font-family;
+}
+
+:lang(ka) {
   font-family: $georgian-font-family;
+}
+
+html:lang(ka) {
   font-size: 17px;
 }

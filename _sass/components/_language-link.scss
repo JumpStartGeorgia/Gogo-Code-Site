@@ -1,6 +1,5 @@
 .language-link {
   text-decoration: none;
-  font-family: $secondary-font-family;
   font-weight: 200;
   color: darken($grey-background-color, 40%);
   text-transform: lowercase;
@@ -15,7 +14,11 @@
   content: none;
 }
 
-.language-link.mod-georgian {
+.language-link:lang(en) {
+  font-family: $secondary-font-family;
+}
+
+.language-link:lang(ka) {
   font-family: $georgian-font-family;
 }
 
