@@ -26,6 +26,8 @@
 
     @media (min-width: $hide-nav-width) {
       flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 700px;
     }
   }
 
@@ -33,14 +35,16 @@
       padding: 0.7rem;
       list-style-type: none;
       margin: 0 auto;
-
-      @media (min-width: $hide-nav-width) {
-        display: inline-block;
-      }
     }
 
     .main-nav-list-item.mod-normal-link {
-      padding: 0.7rem 0.09rem;
+      padding: 0;
+
+      @media (min-width: $hide-nav-width) {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .main-nav-list-item.mod-donate {
