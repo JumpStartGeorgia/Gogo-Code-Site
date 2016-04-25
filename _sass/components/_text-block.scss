@@ -1,12 +1,11 @@
 .text-block {
-  padding-left: 0.89rem;
+  padding-left: 16px;
   border-left: $border-left-colored;
-  margin-top: 1.77rem;
-  margin-bottom: 1.77rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   @media (min-width: 800px) {
-    margin-top: 1.77rem;
-    margin-bottom: 2.66rem;
+    margin-bottom: 48px;
   }
 }
 
