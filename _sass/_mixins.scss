@@ -27,9 +27,17 @@ $content-margin: 1.33rem;
 }
 
 @mixin m-secondary-font-family() {
-  font-family: $secondary-font-family;
+  &:lang(en) {
+    font-family: $secondary-font-family;
+  }
 
   &:lang(ka) {
     font-family: $georgian-font-family;
+  }
+
+  // Applies English font to English text when it used in the context of
+  // Georgian text. Example: რა არის Gogo Code?
+  & :lang(en) {
+    font-family: $secondary-font-family
   }
 }
