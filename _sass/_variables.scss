@@ -1,10 +1,12 @@
 $primary-font-family: 'Open Sans', sans-serif;
 $secondary-font-family: 'Exo', sans-serif;
 $georgian-font-family: 'Dejavu Neue', sans-serif;
+$georgian-caps-font-family: 'Dejavu Neue Caps', sans-serif;
 
 $max-content-width: 950px;
 
-$hide-nav-width: 1000px;
+// Only show navigation when nav switcher has space in margin
+$hide-nav-width: $max-content-width + 200px;
 $graphic-list-become-horizontal: 800px;
 
 $site-baseurl: '';

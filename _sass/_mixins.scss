@@ -14,7 +14,7 @@
   }
 }
 
-$content-margin: 1.33rem;
+$content-margin: 24px;
 
 @mixin m-cancel-content-margin() {
   margin-left: -1*$content-margin;
@@ -27,9 +27,27 @@ $content-margin: 1.33rem;
 }
 
 @mixin m-secondary-font-family() {
-  font-family: $secondary-font-family;
+  &:lang(en) {
+    font-family: $secondary-font-family;
+  }
 
   &:lang(ka) {
     font-family: $georgian-font-family;
+  }
+
+  // Applies English font to English text when it used in the context of
+  // Georgian text. Example: რა არის Gogo Code?
+  & :lang(en) {
+    font-family: $secondary-font-family
+  }
+}
+
+@mixin m-uppercase-english-and-georgian() {
+  &:lang(en) {
+    text-transform: uppercase;
+  }
+
+  &:lang(ka) {
+    font-family: $georgian-caps-font-family;
   }
 }

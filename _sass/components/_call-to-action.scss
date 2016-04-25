@@ -4,14 +4,24 @@
   display: block;
   font-size: 1.35rem;
   font-weight: 300;
-  width: 6.2rem;
-  padding: 0.72rem 0.45rem;
+  min-width: 6.2rem;
+  padding: 13px 8px;
   letter-spacing: 0.02em;
   text-align: center;
   text-decoration: none;
   text-transform: lowercase;
+  white-space: nowrap;
 
   @include m-secondary-font-family();
+
+  // Necessary to insert invisible brackets so that hovering doesn't
+  // change content box width
+  @include m-surround-with-brackets(hidden);
+
+  &:lang(ka) {
+    font-size: 1.15rem;
+    padding: 13px 7px;
+  }
 }
 
 .call-to-action:hover {
@@ -34,5 +44,9 @@ $call-to-action-dark-background-color: darken($secondary-color, 3%);
 
 .call-to-action.mod-navigation {
   font-size: 1.1rem;
-  padding: 0.6rem 0 0.6rem;
+  padding: 11px 0;
+
+  &:lang(ka) {
+    padding: 11px 5px;
+  }
 }

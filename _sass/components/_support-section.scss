@@ -20,31 +20,44 @@ $support-text-become-horizontal: 900px;
 
     .support-section-text-section:first-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 56.9%;
-        padding-right: 1.77rem;
+        padding-right: 32px;
+
+        &:lang(en) {
+          width: 56.9%;
+        }
+
+        &:lang(ka) {
+          width: 54.5%;
+        }
       }
     }
 
     .support-section-text-section:last-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 43.1%;
+        &:lang(en) {
+          width: 43.1%;
+        }
+
+        &:lang(ka) {
+          width: 45.5%;
+        }
       }
     }
 
       .support-section-text-section-content {
-        padding-left: 0.89rem;
+        padding-left: 16px;
         border-left: $border-left-colored;
-        margin-top: 0.89rem;
+        margin-top: 16px;
         margin-bottom: 0;
 
         @media (min-width: 800px) {
-          margin-top: 1.77rem;
+          margin-top: 32px;
         }
       }
 
   .support-section-donate {
     float: right;
-    margin-bottom: 0.89rem;
+    margin-bottom: 16px;
 
     @media (min-width: $support-text-become-horizontal) {
       position: absolute;
