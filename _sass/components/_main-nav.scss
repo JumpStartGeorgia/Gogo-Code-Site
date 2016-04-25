@@ -1,13 +1,18 @@
 .main-nav {
-  padding: 0.86em 0 0.8em;
+  padding: 1em 0;
   background-color: $grey-background-color;
+  height: 400px;
+  box-sizing: border-box;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
 
   @media (min-width: $hide-nav-width) {
+    height: auto;
     background-color: inherit;
+    width: 769px;
   }
+
 }
 
 .main-nav.is-hidden-on-mobile {
@@ -18,21 +23,24 @@
 }
 
   .main-nav-list {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 100%;
+    justify-content: space-between;
 
     @media (min-width: $hide-nav-width) {
+      height: auto;
       flex-flow: row nowrap;
-      justify-content: space-between;
-      width: 700px;
+      width: 100%;
     }
   }
 
     .main-nav-list-item {
-      padding: 0.7rem;
+      padding: 0;
       list-style-type: none;
       margin: 0 auto;
     }
@@ -48,13 +56,13 @@
     }
 
     .main-nav-list-item.mod-donate {
-      padding-bottom: 0.35rem;
-
-      @media (min-width: $hide-nav-width) {
-        padding-bottom: 0.8rem;
-      }
     }
 
     .main-nav-list-item.mod-language-switcher {
-      min-width: 3rem;
+      @media (min-width: $hide-nav-width) {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(136%, -50%);
+      }
     }

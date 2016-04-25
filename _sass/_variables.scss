@@ -4,7 +4,8 @@ $georgian-font-family: 'Dejavu Neue', sans-serif;
 
 $max-content-width: 950px;
 
-$hide-nav-width: 1000px;
+// Only show navigation when nav switcher has space in margin
+$hide-nav-width: $max-content-width + 200px;
 $graphic-list-become-horizontal: 800px;
 
 $site-baseurl: '';
