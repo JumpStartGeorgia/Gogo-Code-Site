@@ -53,10 +53,11 @@ $graphic-heading-triangle-height: 14px;
       color: white;
       text-align: center;
       text-transform: uppercase;
-      font-family: $secondary-font-family;
       font-weight: 100;
       margin: 0;
       margin-top: 0.1em;
+
+      @include m-secondary-font-family();
     }
 
   .graphic-heading-triangle {

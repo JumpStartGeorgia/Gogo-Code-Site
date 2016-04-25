@@ -1,12 +1,12 @@
 .heading {
   color: $primary-color;
-  font-family: $secondary-font-family;
   font-weight: 400;
   text-transform: lowercase;
   font-size: 1.43rem;
   margin: 0.88rem 0;
 
   @include m-surround-with-brackets();
+  @include m-secondary-font-family();
 
   // Prevents heading brackets from wrapping to next line on small screen
   @media (max-width: 350px) {

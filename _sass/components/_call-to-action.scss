@@ -2,7 +2,6 @@
   background-color: $secondary-color;
   color: white;
   display: block;
-  font-family: $secondary-font-family;
   font-size: 1.35rem;
   font-weight: 300;
   width: 6.2rem;
@@ -11,6 +10,8 @@
   text-align: center;
   text-decoration: none;
   text-transform: lowercase;
+
+  @include m-secondary-font-family();
 }
 
 .call-to-action:hover {

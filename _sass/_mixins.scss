@@ -23,3 +23,11 @@ $content-margin: 1.33rem;
   padding-left: $content-margin;
   padding-right: $content-margin;
 }
+
+@mixin m-secondary-font-family() {
+  font-family: $secondary-font-family;
+
+  &:lang(ka) {
+    font-family: $georgian-font-family;
+  }
+}
