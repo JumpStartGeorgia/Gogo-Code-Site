@@ -10,6 +10,10 @@
 
   @include m-secondary-font-family();
 
+  &:lang(ka) {
+    font-size: 1rem;
+  }
+
   @media (min-width: $hide-nav-width) {
     color: #7f7a84;
     min-width: initial;
