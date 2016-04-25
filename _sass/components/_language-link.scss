@@ -10,6 +10,8 @@
 
 .language-link:not(:last-child)::after {
   content: '|';
+  font-weight: 200 !important;
+  color: darken($grey-background-color, 40%) !important;
 }
 
 .language-link.is-active {
