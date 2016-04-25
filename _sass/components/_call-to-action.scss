@@ -15,7 +15,7 @@
 }
 
 .call-to-action:hover {
-  @include m-surround-with-brackets();
+  @include m-surround-with-brackets(visible);
   background-color: darken($secondary-color, 5%);
 }
 

@@ -1,14 +1,16 @@
-@mixin m-surround-with-brackets() {
+@mixin m-surround-with-brackets($visibility) {
   &::before {
     content: '<';
+    font-family: $secondary-font-family;
     margin-right: -0.2em;
-    visibility: visible;
+    visibility: $visibility;
   }
 
   &::after {
     content: '>';
+    font-family: $secondary-font-family;
     margin-left: -0.2em;
-    visibility: visible;
+    visibility: $visibility;
   }
 }
 
