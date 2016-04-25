@@ -1,13 +1,14 @@
 .nav-section-link {
   color: darken($grey-background-color, 40%);
   display: block;
-  font-family: $secondary-font-family;
   font-size: 0.97rem;
   font-weight: 300;
   text-decoration: none;
   text-transform: lowercase;
   text-align: center;
   min-width: 6.2rem;
+
+  @include m-secondary-font-family();
 
   @media (min-width: $hide-nav-width) {
     color: #7f7a84;

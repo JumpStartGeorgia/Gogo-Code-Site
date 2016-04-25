@@ -4,6 +4,8 @@
   color: darken($grey-background-color, 40%);
   text-transform: lowercase;
   font-size: 0.92rem;
+
+  @include m-secondary-font-family();
 }
 
 .language-link::after {
@@ -12,14 +14,6 @@
 
 .language-link:last-child::after {
   content: none;
-}
-
-.language-link:lang(en) {
-  font-family: $secondary-font-family;
-}
-
-.language-link:lang(ka) {
-  font-family: $georgian-font-family;
 }
 
 .language-link.is-active {
