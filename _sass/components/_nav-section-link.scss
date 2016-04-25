@@ -1,12 +1,12 @@
 .nav-section-link {
   color: darken($grey-background-color, 40%);
-  display: block;
   font-size: 0.97rem;
   font-weight: 300;
   text-decoration: none;
   text-transform: lowercase;
   text-align: center;
   min-width: 6.2rem;
+  white-space: nowrap;
 
   @include m-secondary-font-family();
 

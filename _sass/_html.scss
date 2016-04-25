@@ -1,6 +1,4 @@
 html {
-    line-height: 1.5;
-    font-size: 18px;
     font-weight: 400;
     color: $text-color;
     background-color: $background-color;
@@ -21,6 +19,12 @@ html {
   font-family: $georgian-font-family;
 }
 
+html:lang(en) {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 html:lang(ka) {
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 26px;
 }
