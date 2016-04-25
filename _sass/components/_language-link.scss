@@ -8,12 +8,8 @@
   @include m-secondary-font-family();
 }
 
-.language-link::after {
+.language-link:not(:last-child)::after {
   content: '|';
-}
-
-.language-link:last-child::after {
-  content: none;
 }
 
 .language-link.is-active {
