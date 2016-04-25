@@ -20,14 +20,27 @@ $support-text-become-horizontal: 900px;
 
     .support-section-text-section:first-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 56.9%;
         padding-right: 32px;
+
+        &:lang(en) {
+          width: 56.9%;
+        }
+
+        &:lang(ka) {
+          width: 54.5%;
+        }
       }
     }
 
     .support-section-text-section:last-child {
       @media (min-width: $support-text-become-horizontal) {
-        width: 43.1%;
+        &:lang(en) {
+          width: 43.1%;
+        }
+
+        &:lang(ka) {
+          width: 45.5%;
+        }
       }
     }
 
