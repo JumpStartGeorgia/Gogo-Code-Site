@@ -4,6 +4,7 @@
   text-transform: lowercase;
   font-size: 1.43rem;
   margin: 0.88rem 0;
+  white-space: nowrap;
 
   @include m-surround-with-brackets(visible);
   @include m-secondary-font-family();
