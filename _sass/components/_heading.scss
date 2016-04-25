@@ -4,7 +4,6 @@
   text-transform: lowercase;
   font-size: 1.43rem;
   margin: 16px 0;
-  white-space: nowrap;
 
   @include m-surround-with-brackets(visible);
   @include m-secondary-font-family();
@@ -25,6 +24,6 @@
 
   .heading.mod-footer {
     margin-top: 0;
-    font-size: 1.2rem;
+    font-size: 1.17rem;
     color: #8c78a2;
   }
