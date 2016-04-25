@@ -41,3 +41,13 @@ $content-margin: 24px;
     font-family: $secondary-font-family
   }
 }
+
+@mixin m-uppercase-english-and-georgian() {
+  &:lang(en) {
+    text-transform: uppercase;
+  }
+
+  &:lang(ka) {
+    font-family: $georgian-caps-font-family;
+  }
+}

@@ -35,12 +35,12 @@ $graphic-heading-triangle-height: 14px;
     width: 270px;
     margin: auto;
     z-index: 100;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     padding-top: 16px;
 
     @media (min-width: $graphic-list-become-horizontal) {
       width: 320px;
-      font-size: 2.25rem;
+      font-size: 2.6rem;
     }
   }
 
@@ -52,12 +52,13 @@ $graphic-heading-triangle-height: 14px;
     .graphic-heading-container-text {
       color: white;
       text-align: center;
-      text-transform: uppercase;
       font-weight: 100;
       margin: 0;
       margin-top: 0.1em;
+      font-size: 1em;
 
       @include m-secondary-font-family();
+      @include m-uppercase-english-and-georgian();
     }
 
   .graphic-heading-triangle {
@@ -89,6 +90,14 @@ $graphic-heading-triangle-height: 14px;
   &::before {
     background-color: $graphic-heading-after-camp-color;
   }
+
+  .graphic-heading-container {}
+
+    .graphic-heading-container-text {
+      &:lang(ka) {
+          font-size: 0.9em;
+      }
+    }
 
   .graphic-heading-triangle {
     border-top: $graphic-heading-triangle-height solid $graphic-heading-after-camp-color;
