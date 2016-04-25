@@ -10,6 +10,9 @@ $header-displayed-nav-height: 150px;
     box-sizing: border-box;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -21,6 +24,9 @@ $header-displayed-nav-height: 150px;
     box-sizing: border-box;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: $hide-nav-width) {
       height: inherit;
