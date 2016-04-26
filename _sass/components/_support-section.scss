@@ -50,6 +50,12 @@ $support-text-become-horizontal: 900px;
         margin-top: 16px;
         margin-bottom: 0;
 
+        &:lang(ka) {
+          @media (min-width: 800px) {
+            margin-top: 24px;
+          }
+        }
+
         @media (min-width: 800px) {
           margin-top: 32px;
         }
