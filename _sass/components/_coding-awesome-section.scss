@@ -84,6 +84,11 @@
       @media (min-width: 500px) {
         left: -88px;
         top: 47px;
+
+        &:lang(ka) {
+          left: -84px;
+          top: 42px;
+        }
       }
     }
 
@@ -96,7 +101,35 @@
       left: 229px;
       bottom: -59px;
 
+      &:lang(ka) {
+        left: 239px;
+      }
+
       @media (min-width: 500px) {
         left: 251px;
+
+        &:lang(ka) {
+          bottom: -43px;
+          left: 268px;
+        }
+      }
+    }
+
+    .coding-awesome-section-content-quote:lang(ka) {
+      &:before {
+        @media (min-width: 500px) {
+          left: -84px;
+          top: 42px;
+        }
+      }
+
+      &:after {
+        left: 239px;
+        bottom: -50px;
+
+        @media (min-width: 500px) {
+          bottom: -43px;
+          left: 268px;
+        }
       }
     }
