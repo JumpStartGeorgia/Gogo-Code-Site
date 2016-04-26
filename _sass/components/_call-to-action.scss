@@ -20,7 +20,7 @@
 
   &:lang(ka) {
     font-size: 1.15rem;
-    padding: 14px 7px 12px;
+    padding: 14px 7px 10px;
     font-family: $georgian-caps-font-family;
   }
 }
@@ -48,7 +48,8 @@ $call-to-action-dark-background-color: darken($secondary-color, 3%);
   padding: 11px 0;
 
   &:lang(ka) {
+    min-width: 8rem;
     font-size: 0.95rem;
-    padding: 12px 5px 10px;
+    padding: 12px 0 8px;
   }
 }

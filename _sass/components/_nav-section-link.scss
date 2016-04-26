@@ -12,7 +12,12 @@
   @include m-secondary-font-family();
 
   &:lang(ka) {
+    min-width: 8rem;
     font-size: 1rem;
+
+    @media (min-width: $hide-nav-width) {
+      min-width: initial;
+    }
   }
 
   @media (min-width: $hide-nav-width) {
