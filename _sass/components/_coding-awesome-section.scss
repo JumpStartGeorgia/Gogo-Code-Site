@@ -26,6 +26,13 @@
     @include m-cancel-content-margin();
     @include m-content-padding();
 
+    &:lang(ka) {
+      @media (min-width: 500px) {
+        padding-top: 38px;
+        padding-bottom: 38px;
+      }
+    }
+
     @media (min-width: 500px) {
       padding-top: 32px;
     }
