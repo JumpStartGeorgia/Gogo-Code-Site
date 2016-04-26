@@ -1,13 +1,16 @@
 .main-nav {
-  padding: 1em 0;
   background-color: $grey-background-color;
   height: 400px;
   box-sizing: border-box;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @include m-cancel-content-margin();
   @include m-content-padding();
 
   @media (min-width: $hide-nav-width) {
+    padding-top: 1em;
+    padding-bottom: 1em;
     height: auto;
     background-color: inherit;
     width: 719px;
