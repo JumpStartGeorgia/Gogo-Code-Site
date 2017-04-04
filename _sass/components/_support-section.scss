@@ -1,10 +1,10 @@
 $support-text-become-horizontal: 900px;
 
-.support-section {
+.get-involved-section {
   position: relative;
 }
 
-  .support-section-text {
+  .get-involved-section-text {
     display: flex;
     flex-direction: column;
 
@@ -14,11 +14,11 @@ $support-text-become-horizontal: 900px;
     }
   }
 
-    .support-section-text-section {
+    .get-involved-section-text-section {
       box-sizing: border-box;
     }
 
-    .support-section-text-section:first-child {
+    .get-involved-section-text-section:first-child {
       @media (min-width: $support-text-become-horizontal) {
         padding-right: 32px;
 
@@ -32,7 +32,7 @@ $support-text-become-horizontal: 900px;
       }
     }
 
-    .support-section-text-section:last-child {
+    .get-involved-section-text-section:last-child {
       @media (min-width: $support-text-become-horizontal) {
         &:lang(en) {
           width: 43.1%;
@@ -44,11 +44,15 @@ $support-text-become-horizontal: 900px;
       }
     }
 
-      .support-section-text-section-content {
+      .get-involved-section-text-section-content {
         padding-left: 16px;
         border-left: $border-left-colored;
         margin-top: 16px;
         margin-bottom: 0;
+
+        a {
+           word-break: break-all;
+        }
 
         &:lang(ka) {
           @media (min-width: 800px) {
@@ -61,7 +65,7 @@ $support-text-become-horizontal: 900px;
         }
       }
 
-  .support-section-donate {
+  .get-involved-section-donate {
     float: right;
     margin-bottom: 16px;
 
