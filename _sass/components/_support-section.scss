@@ -2,6 +2,11 @@ $support-text-become-horizontal: 900px;
 
 .get-involved-section {
   position: relative;
+
+  @media (max-width: 900px) {
+    margin-bottom: 80px;
+  }
+
 }
 
   .get-involved-section-text {

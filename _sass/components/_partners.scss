@@ -1,0 +1,46 @@
+.partners-wrap {
+	background-color: #f8f8f8;
+	margin: auto -24px;
+}
+
+.partners {
+	padding: 20px 0;
+
+
+	@media (max-width: 1000px){
+		margin-left: 24px;
+	}
+}
+
+.partners, .partners h2 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.partners-links {
+	padding: 32px 0 20px 0;
+
+	a {
+		margin-right: 3%;
+		display: inline-block;
+	}
+
+	img {
+		height: 150px;
+		width: auto;
+	}
+
+	@media (max-width: 500px) {
+		img {
+			height: 120px;
+		}
+	}
+
+	@media (max-width: 370px) {
+
+		img {
+			height: 80px;
+		}
+	}
+}
+

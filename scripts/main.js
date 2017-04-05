@@ -15,6 +15,20 @@ var gogoCode = (function() {
   }
 
   return gogoCode;
+  
 })();
 
 gogoCode.setupMobileNavButton();
+
+(function() {
+  if($('.popup').length > 0) {
+    $('.popup').fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none',
+          helpers : {
+              media : {}
+          }
+    });
+  }
+})();
+
