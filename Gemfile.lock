@@ -217,7 +217,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 130)
-  json
   octopress-autoprefixer (~> 1.0, >= 1.0.1)
   octopress-debugger (~> 1.0, >= 1.0.2)
 

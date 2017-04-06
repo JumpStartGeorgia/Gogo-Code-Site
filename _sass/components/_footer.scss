@@ -1,4 +1,6 @@
-$footer-become-horizontal: 600px;
+$footer-become-horizontal: 900px;
+$footer-shrink: 960px;
+$smaller-partner-logos: 500px;
 
 .footer {
   background-color: $footer-background-color;
@@ -14,81 +16,120 @@ $footer-become-horizontal: 600px;
   }
 }
 
-  .footer-content {
-    max-width: $max-content-width;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.75rem;
-    box-sizing: border-box;
-    line-height: 1.35rem;
+.footer-content {
+  max-width: $max-content-width;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+  line-height: 1.35rem;
+}
+
+// It is necessary to have another wrapper div in order to limit the
+// width of both footer content sections within the already limited
+// $max-content-width.
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $footer-become-horizontal) {
+    flex-direction: row;
   }
 
-    // It is necessary to have another wrapper div in order to limit the
-    // width of both footer content sections within the already limited
-    // $max-content-width.
-    .footer-content-wrapper {
-      display: flex;
-      flex-direction: column;
+}
 
-      @media (min-width: $footer-become-horizontal) {
-        flex-direction: row;
-        max-width: 493px;
-        justify-content: space-between;
-      }
+.footer-content-wrapper-section {
+  flex: 6.5;
+  border-bottom: 1px solid darken($grey-background-color, 20%);
+  margin-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
 
-      &:lang(ka) {
-        max-width: 511px;
-      }
+  &:nth-child(2) {
+    flex: 8;
+  
+    &:lang(ka) {
+      flex: 9;
     }
 
-      .footer-content-wrapper-section {
-        flex: 9;
-        border-bottom: 1px solid darken($grey-background-color, 20%);
-        margin-top: 16px;
-        padding-bottom: 16px;
-        box-sizing: border-box;
+  }
 
-        @media (min-width: $footer-become-horizontal) {
-          border-bottom: 0;
-        }
-      }
 
-      .footer-content-wrapper-section:last-child {
-        flex: 11;
-        border-bottom: none;
-      }
 
-        .footer-content-wrapper-section-text {
-          padding-bottom: 8px;
 
-          @media (min-width: $footer-become-horizontal) {
-            // Makes the social media icons line up with the JumpStart logo
-            min-height: 7.2rem;
-          }
-        }
+  @media (min-width: $footer-become-horizontal) {
+    border-bottom: 0;
 
-          .footer-content-wrapper-section-text-line {
-            color: #968e9f;
-            margin: 0;
+    &:not(:nth-child(1)) {
+      margin-left: 35px;
+    }
+  }
 
-            &:lang(ka) {
-              font-size: 1.05em;
-            }
-          }
 
-        .footer-content-wrapper-section-social-icons {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          width: 82px;
-          height: 40px;
-          box-sizing: border-box;
-          padding-bottom: 5px;
-        }
+  @media (min-width: $footer-shrink) {
+    &:not(:nth-child(1)) {
+      margin-left: 60px;
+    }
+  }
+}
 
-        .footer-content-wrapper-section-jumpstart-logo {
-          $jumpstart-logo-width: 100px;
-          width: $jumpstart-logo-width;
-          height: .4 * $jumpstart-logo-width;
-        }
+.footer-content-wrapper-section:nth-child(3) {
+  flex: 11;
+  border-bottom: none;
+}
+
+.footer-content-wrapper-section-text {
+  padding-bottom: 8px;
+
+  @media (min-width: $footer-become-horizontal) {
+    // Makes the social media icons line up with the JumpStart logo
+    min-height: 7.2rem;
+  }
+}
+
+.footer-content-wrapper-section-text-line {
+  color: #968e9f;
+  margin: 0;
+
+  &:lang(ka) {
+    font-size: 1.05em;
+  }
+}
+
+.footer-content-wrapper-section-social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 82px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+
+.footer-content-wrapper-section-jumpstart-logo {
+  $jumpstart-logo-width: 100px;
+  width: $jumpstart-logo-width;
+  height: .4 * $jumpstart-logo-width;
+}
+
+.partners-links {
+  display: flex;
+
+  a:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  img {
+    height: 100px;
+    width: auto;
+  }
+
+  @media (max-width: $smaller-partner-logos) {
+    img {
+      height: 80px;
+      width: auto;
+    }
+  }
+
+}
