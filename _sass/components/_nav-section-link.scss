@@ -20,6 +20,10 @@
     }
   }
 
+  &, &::before, &::after {
+    transition: $transition-time;
+  }
+
   @media (min-width: $hide-nav-width) {
     color: #7f7a84;
     min-width: initial;
@@ -27,15 +31,17 @@
 
     // Necessary to insert invisible brackets so that hovering doesn't
     // change content box width
-    @include m-surround-with-brackets(hidden);
+    @include m-surround-with-brackets(0);
   }
+
+
 }
 
 .nav-section-link:hover {
   color: lighten($primary-color, 4%);
   text-align: center;
 
-  @include m-surround-with-brackets(visible);
+  @include m-surround-with-brackets(1);
 
   &:lang(en) {
     font-weight: 500;
@@ -47,9 +53,19 @@
   color: white;
   text-align: center;
 
-  @include m-surround-with-brackets(visible);
+  @include m-surround-with-brackets(1);
 
   &:lang(en) {
     font-weight: 500;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translate(100px, 0);
+  }
+
+  100% {
+    transform: translate(300px, 0);
   }
 }

@@ -12,11 +12,15 @@
   text-transform: lowercase;
   white-space: nowrap;
 
+  &, &::before, &::after {
+    transition: $transition-time;
+  }
+
   @include m-secondary-font-family();
 
   // Necessary to insert invisible brackets so that hovering doesn't
   // change content box width
-  @include m-surround-with-brackets(hidden);
+  @include m-surround-with-brackets(0);
 
   &:lang(ka) {
     font-size: 1.15rem;
@@ -26,7 +30,7 @@
 }
 
 .call-to-action:hover {
-  @include m-surround-with-brackets(visible);
+  @include m-surround-with-brackets(1);
   background-color: darken($secondary-color, 5%);
 }
 

@@ -5,7 +5,7 @@
   font-size: 1.43rem;
   margin: 16px 0;
 
-  @include m-surround-with-brackets(visible);
+  @include m-surround-with-brackets(1);
   @include m-secondary-font-family();
 
   // Prevents heading brackets from wrapping to next line on small screen
