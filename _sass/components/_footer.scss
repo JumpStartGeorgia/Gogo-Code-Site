@@ -120,7 +120,8 @@ $smaller-partner-logos: 500px;
   }
 
   img {
-    height: 100px;
+    opacity: 0.9;
+    height: 85px;
     width: auto;
   }
 
@@ -128,7 +129,7 @@ $smaller-partner-logos: 500px;
 
   @media (max-width: $smaller-partner-logos) {
     img {
-      height: 80px;
+      height: 70px;
       width: auto;
     }
   }
