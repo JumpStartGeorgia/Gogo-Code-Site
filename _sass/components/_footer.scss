@@ -101,7 +101,6 @@ $smaller-partner-logos: 500px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 82px;
   height: 40px;
   box-sizing: border-box;
   padding-bottom: 5px;
@@ -125,6 +124,8 @@ $smaller-partner-logos: 500px;
     width: auto;
   }
 
+
+
   @media (max-width: $smaller-partner-logos) {
     img {
       height: 80px;
@@ -133,3 +134,17 @@ $smaller-partner-logos: 500px;
   }
 
 }
+
+
+ .at-share-btn {
+  background-color: transparent !important;
+  svg {
+    fill: $primary-color !important;
+  }
+ }
+
+ //default share buttons that comes with addthis
+ .at-expanding-share-button-toggle {
+  display: none;
+ }
+
