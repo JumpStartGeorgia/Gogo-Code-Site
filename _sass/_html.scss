@@ -9,6 +9,7 @@ html {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
 }
 
 :lang(en) {
