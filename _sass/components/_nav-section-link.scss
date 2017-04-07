@@ -14,7 +14,8 @@
   &:lang(ka) {
     min-width: 8rem;
     font-size: 1rem;
-
+    font-weight: 400;
+    
     @media (min-width: $hide-nav-width) {
       min-width: initial;
     }
