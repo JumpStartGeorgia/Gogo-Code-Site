@@ -1,7 +1,10 @@
 .section {
+  position: relative;
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
+
 
 .section.mod-about {
   margin-bottom: 16px;
@@ -30,4 +33,15 @@
     margin-top: 32px;
     margin-bottom: 32px;
   }
+}
+
+.section-redirection {
+  position: absolute;
+  left: 0;
+  top: $header-hidden-nav-height-scrolled-sections;
+
+  @media (min-width: $hide-nav-width) {
+    top: $header-displayed-nav-height-scrolled-sections;
+  }
+
 }

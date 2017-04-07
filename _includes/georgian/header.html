@@ -1,79 +1,81 @@
-<header class='header'>
+<div class='header-wrapper'>
+  <header class='header'>
 
-  <h1 class='u-visually-hidden'>
-    Header
-  </h1>
+    <h1 class='u-visually-hidden'>
+      Header
+    </h1>
 
-  <div class='header-mobile'>
+    <div class='header-mobile'>
 
-    <div class='header-mobile-brand'>
-      <a class='logo-link' href='{{ "/ka" | prepend: site.baseurl }}'>
-        {% include icons/gogo-code-logo.svg %}
-      </a>
+      <div class='header-mobile-brand'>
+        <a class='logo-link' href='{{ "/ka/#" | prepend: site.baseurl }}'>
+          {% include icons/gogo-code-logo.svg %}
+        </a>
+      </div>
+
+      <button class='nav-toggle-button js-toggle-navigation'>
+        <span class='nav-toggle-button-icon-bar'></span>
+        <span class='nav-toggle-button-icon-bar'></span>
+        <span class='nav-toggle-button-icon-bar'></span>
+      </button>
+
     </div>
 
-    <button class='nav-toggle-button js-toggle-navigation'>
-      <span class='nav-toggle-button-icon-bar'></span>
-      <span class='nav-toggle-button-icon-bar'></span>
-      <span class='nav-toggle-button-icon-bar'></span>
-    </button>
+    <nav class='main-nav is-hidden-on-mobile js-act-as-navigation'>
+      <h2 class='u-visually-hidden'>
+        Primary Navigation
+      </h2>
 
-  </div>
+      <ul class='main-nav-list'>
 
-  <nav class='main-nav is-hidden-on-mobile js-act-as-navigation'>
-    <h2 class='u-visually-hidden'>
-      Primary Navigation
-    </h2>
+        <li class='main-nav-list-item mod-normal-link'>
+          <a class='nav-section-link' href='{{ "/ka/#about" | prepend: site.baseurl }}'>
+            შესახებ
+          </a>
+        </li>
 
-    <ul class='main-nav-list'>
+        <li class='main-nav-list-item mod-normal-link'>
+          <a class='nav-section-link' href='{{ "/ka/#why-coding" | prepend: site.baseurl }}'>
+            რატომ?
+          </a>
+        </li>
 
-      <li class='main-nav-list-item mod-normal-link'>
-        <a class='nav-section-link' href='{{ "/ka/#about" | prepend: site.baseurl }}'>
-          შესახებ
-        </a>
-      </li>
+        <li class='main-nav-list-item mod-normal-link'>
+          <a class='nav-section-link' href='{{ "/ka/#get-involved" | prepend: site.baseurl }}'>
+            ჩაერთე
+          </a>
+        </li>
 
-      <li class='main-nav-list-item mod-normal-link'>
-        <a class='nav-section-link' href='{{ "/ka/#why-coding" | prepend: site.baseurl }}'>
-          რატომ?
-        </a>
-      </li>
+  <!--       <li class='main-nav-list-item mod-normal-link'>
+          <a class='nav-section-link' href='{{ "/ka/#team" | prepend: site.baseurl }}'>
+            გუნდი
+          </a>
+        </li> -->
 
-      <li class='main-nav-list-item mod-normal-link'>
-        <a class='nav-section-link' href='{{ "/ka/#get-involved" | prepend: site.baseurl }}'>
-          ჩაერთე
-        </a>
-      </li>
+        <li class='main-nav-list-item mod-normal-link'>
+          <a class='nav-section-link' href='{{ "/ka/#contact" | prepend: site.baseurl }}'>
+            კონტაქტი
+          </a>
+        </li>
 
-<!--       <li class='main-nav-list-item mod-normal-link'>
-        <a class='nav-section-link' href='{{ "/ka/#team" | prepend: site.baseurl }}'>
-          გუნდი
-        </a>
-      </li> -->
+        <li class='main-nav-list-item mod-donate'>
+          <a class='call-to-action mod-navigation popup fancybox.iframe' href='{{ "/ka/donate" | prepend: site.baseurl }}'>
+            დააფინანსე
+          </a>
+        </li>
 
-      <li class='main-nav-list-item mod-normal-link'>
-        <a class='nav-section-link' href='{{ "/ka/#contact" | prepend: site.baseurl }}'>
-          კონტაქტი
-        </a>
-      </li>
+        <li class='main-nav-list-item mod-language-switcher'>
+          <a lang='ka' class='language-link is-active' href='{{ "/ka" | prepend: site.baseurl }}'>
+            ქა
+          </a>
 
-      <li class='main-nav-list-item mod-donate'>
-        <a class='call-to-action mod-navigation popup fancybox.iframe' href='{{ "/ka/donate" | prepend: site.baseurl }}'>
-          დააფინანსე
-        </a>
-      </li>
+          <a lang='en' class='language-link' href='{{ "/en" | prepend: site.baseurl }}'>
+            En
+          </a>
+        </li>
 
-      <li class='main-nav-list-item mod-language-switcher'>
-        <a lang='ka' class='language-link is-active' href='{{ "/ka" | prepend: site.baseurl }}'>
-          ქა
-        </a>
+      </ul>
+    </nav>
 
-        <a lang='en' class='language-link' href='{{ "/en" | prepend: site.baseurl }}'>
-          En
-        </a>
-      </li>
-
-    </ul>
-  </nav>
-
-</header>
+  </header>
+</div>

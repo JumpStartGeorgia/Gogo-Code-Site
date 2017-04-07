@@ -1,0 +1,8 @@
+.index-main {
+  padding-top: $header-hidden-nav-height;
+
+  @media(min-width: $hide-nav-width) {
+    padding-top: $header-displayed-nav-height;
+  }
+
+}

@@ -1,7 +1,16 @@
-$header-hidden-nav-height: 112px;
-$header-displayed-nav-height: 150px;
+
+.header-wrapper {
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  z-index: 120;
+  margin-left: -24px;
+
+}
 
 .header {
+  transition: all 0.5s;
+
   @media (min-width: $hide-nav-width) {
     display: flex;
     justify-content: space-between;
@@ -13,7 +22,14 @@ $header-displayed-nav-height: 150px;
     max-width: $max-content-width;
     margin-left: auto;
     margin-right: auto;
+    
+    &.scrolled {
+      height: $header-displayed-nav-height-scrolled;
+    }
+
   }
+
+
 }
 
   .header-mobile {
@@ -25,20 +41,27 @@ $header-displayed-nav-height: 150px;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     max-width: $max-content-width;
+    padding: 24px;
+    transition: all 0.5s;
 
     @media (min-width: $hide-nav-width) {
       height: inherit;
       padding: 0;
     }
+
   }
 
+    .header.scrolled .header-mobile{
+      height: $header-hidden-nav-height-scrolled;
+    }
+
     .header-mobile-brand {
-      width: 55%;
       max-width: 170px;
       padding-top: 14px;
 
       svg {
         overflow: visible;
+        width: 75%;
         
         .hover {
           transition: all $transition-time;
@@ -55,7 +78,9 @@ $header-displayed-nav-height: 150px;
       }
 
       @media (min-width: $hide-nav-width) {
-        width: 100%;
+        svg {
+          width: 100%;
+        }
       }
     }
 
