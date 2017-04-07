@@ -60,7 +60,7 @@ var check_scrolled = function() {
 }
 
 var hide_navbar_on_link_click = function() {
-  $('.nav-section-link').click(function(){
+  $('.nav-section-link, .call-to-action').click(function(){
     var navbar = $('.main-nav');
     var hidden = "is-hidden-on-mobile";
     navbar.addClass(hidden);
