@@ -61,7 +61,7 @@
 
       svg {
         overflow: visible;
-        width: 75%;
+        width: 70%;
         
         .hover {
           transition: all $transition-time;
@@ -85,7 +85,7 @@
     }
 
 
-    .header-mobile-brand .logo-link:hover {
+    .not-touch .header-mobile-brand .logo-link:hover {
       .bracket-1 {
         transform: translate(3px, 0);
       }

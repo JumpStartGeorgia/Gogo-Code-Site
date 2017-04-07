@@ -19,6 +19,6 @@
   font-weight: 400;
 }
 
-.language-link.is-active:hover {
+.not-touch .language-link.is-active:hover {
   color: darken($secondary-color, 5%);
 }

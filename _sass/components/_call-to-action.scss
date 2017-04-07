@@ -29,7 +29,7 @@
   }
 }
 
-.call-to-action:hover {
+.not-touch .call-to-action:hover {
   @include m-surround-with-brackets(1);
   background-color: darken($secondary-color, 5%);
 }
@@ -41,10 +41,10 @@ $call-to-action-dark-background-color: darken($secondary-color, 3%);
 
 .call-to-action.mod-coding-awesome-intro {
   background-color: $call-to-action-dark-background-color;
+}
 
-  &:hover {
-    background-color: darken($call-to-action-dark-background-color, 5%);
-  }
+.not-touch .call-to-action.mod-coding-awesome-intro:hover {
+  background-color: darken($call-to-action-dark-background-color, 5%);
 }
 
 .call-to-action.mod-navigation {

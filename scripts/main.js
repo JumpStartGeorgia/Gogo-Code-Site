@@ -59,4 +59,29 @@ var check_scrolled = function() {
   });
 }
 
+var hide_navbar_on_link_click = function() {
+  $('.nav-section-link').click(function(){
+    var navbar = $('.main-nav');
+    var hidden = "is-hidden-on-mobile";
+    navbar.addClass(hidden);
+  })
+}
+
+var is_touch_device = function() {
+  return 'ontouchstart' in window        // works on most browsers 
+      || navigator.maxTouchPoints;       // works on IE10/11 and Surface
+}
+
+var remove_hover_for_touch_device = function() {
+  $(document).ready(function(){
+    if(!is_touch_device()) {
+      $('body').addClass('not-touch');
+    }
+  });
+}
+
+remove_hover_for_touch_device();
+
+hide_navbar_on_link_click();
+
 check_scrolled();
