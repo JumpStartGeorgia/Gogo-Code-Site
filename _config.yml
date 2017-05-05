@@ -5,6 +5,7 @@ collections:
   "-stories-posts":
     title: Posts
     output: true
+    permalink: stories
   posts:
     title: Posts
     output: true
