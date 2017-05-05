@@ -2,10 +2,9 @@
 title: Gogo Code
 timezone: UTC
 collections:
-  "-stories-posts":
+  stories:
     title: Posts
     output: true
-    permalink: stories
   posts:
     title: Posts
     output: true
