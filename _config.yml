@@ -5,7 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
-  "-stories-posts":
+  stories:
     title: Stories
     output: true
   uploads:
