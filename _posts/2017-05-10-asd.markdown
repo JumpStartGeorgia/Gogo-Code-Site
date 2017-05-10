@@ -1,5 +1,7 @@
 ---
 title: asd
 date: 2017-05-10 07:43:00 Z
+slug: ka
+Field name: 
 ---
 
