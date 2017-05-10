@@ -3,7 +3,6 @@ title: asd
 date: 2017-05-10 07:43:00 Z
 categories:
 - ka
-lang: ka
 ---
 
 asdasdas
