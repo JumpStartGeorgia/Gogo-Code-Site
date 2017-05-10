@@ -2,9 +2,6 @@
 title: Gogo Code
 timezone: UTC
 collections:
-  posts-ka:
-    title: Posts
-    output: true
   posts:
     title: Posts
     output: true
