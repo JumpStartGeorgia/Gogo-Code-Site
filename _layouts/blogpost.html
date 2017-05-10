@@ -4,7 +4,19 @@
   <body>
 
     <div class='wrapper'>
-    
+
+	  <a class='nav-section-link' href='{{page.url | replace_first: "/ka/", "/en/" | prepend: site.baseurl}}'>
+        En
+      </a>
+   	  
+   	  <a class='nav-section-link' href='{{page.url | replace_first: "/en/", "/ka/" | prepend: site.baseurl }}'>
+      	Ka
+      </a>
+
+      {{page.url}}
+
+
+
       <h1 class='blog_title'> {{ page.title }} </h1>
 
       {{ content }}

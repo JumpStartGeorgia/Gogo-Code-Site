@@ -2,9 +2,10 @@
 layout: blog
 ---
 
+
 <div class='wrapper'>
 
- {% for post in site.posts %}
+ {% for post in site.ka-blog %}
 		 {% if post.categories[0] == "ka" %}
  			{{ post.url }}
 			<h2 class="title"><a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax">{{ post.title }}</a></h2>
