@@ -1,0 +1,13 @@
+---
+layout: blog
+---
+
+<div class='wrapper'>
+
+ {% for post in site.posts %}
+ 			{{ post.url }}
+			<h2 class="title"><a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax">{{ post.title }}</a></h2>
+ {% endfor %}
+
+
+</div>
