@@ -1,6 +1,5 @@
 ---
 title: pampam
 date: 2017-05-10 06:44:00 Z
-slug: en
 ---
 
