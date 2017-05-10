@@ -1,0 +1,14 @@
+---
+title: ტესტი
+date: 2017-05-10 10:47:00 Z
+categories:
+- ka
+slideshow:
+  image: "/uploads/flying-painter-023ba5.jpg"
+---
+
+ტესტი ვარ ტეესტი
+
+ტესტი ვარ ტეესტიი
+
+ტესტიიი
