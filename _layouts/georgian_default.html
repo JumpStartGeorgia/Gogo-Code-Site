@@ -15,11 +15,6 @@
 
     </div>
 
-
-	 {% for post in site.posts %}
-				<h2 class="title"><a href="_stories/{{ post.url | prepend: site.baseurl  }}" class="js-pjax">{{ post.title }}</a></h2>
-	 {% endfor %}
-
     {% include scripts.html %}
 
   </body>

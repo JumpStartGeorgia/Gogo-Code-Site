@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  {% include simple_head.html %}
+
+  <body>
+
+    <div class='wrapper'>
+
+	 {% for post in site.stories %}
+	 			{{ post.url }}
+				<h2 class="title"><a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax">{{ post.title }}</a></h2>
+	 {% endfor %}
+
+
+    </div>
+
+  </body>
+
+
+</html>
