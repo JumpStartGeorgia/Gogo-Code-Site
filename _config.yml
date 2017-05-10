@@ -15,4 +15,4 @@ baseurl:
 url: http://gogocode.jumpstart.ge/
 github_username: JumpStartGeorgia
 markdown: kramdown
-permalink: ":slug/blog/:categories/:year/:month/:day/:title.html."
+permalink: "/:categories/blog/:year/:month/:day/:title.html."
