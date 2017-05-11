@@ -46,7 +46,6 @@ var update_on_scrolled = function() {
   else if (scrolled_height <= header_height && has_scrolled_class) {
     header.removeClass(scrolled_class);
   }
-
 }
 
 var check_scrolled = function() {

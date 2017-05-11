@@ -8,7 +8,7 @@
     <div class='header-mobile'>
 
       <div class='header-mobile-brand'>
-        <a class='logo-link' href='{{ "/ka/#" | prepend: site.baseurl }}'>
+        <a class='logo-link' href='{{ "/ka" | prepend: site.baseurl }}'>
           {% include icons/gogo-code-logo.svg %}
         </a>
       </div>
@@ -65,11 +65,11 @@
         </li>
 
         <li class='main-nav-list-item mod-language-switcher'>
-          <a lang='ka' class='language-link is-active' href='{{ "/ka" | prepend: site.baseurl }}'>
+          <a lang='ka' class='language-link' href='{{ page.url | replace_first: "/en/", "/ka/" | prepend: site.baseurl }}'>
             ქა
           </a>
 
-          <a lang='en' class='language-link' href='{{ "/en" | prepend: site.baseurl }}'>
+          <a lang='en' class='language-link is-active' href='{{ page.url | replace_first: "/ka/", "/en/" | prepend: site.baseurl }}'>
             En
           </a>
         </li>

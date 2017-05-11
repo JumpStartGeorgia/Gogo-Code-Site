@@ -1,15 +1,24 @@
 ---
-layout: blog
+layout: english_blog
 ---
+<main class='navbar-distance'>
+	<section class='section u-limit-content-width blog-list'>
+		 {% for post in site.eng-blog %}
+			<div class='blogpost'>
+				<div class='blogpost-header'>	
+					<a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax"><h2 class="title">{{ post.title }}</h2></a>
+					<div class='date'> {{ post.date }} </div>
+				</div>
 
-<div class='wrapper'>
-
- {% for post in site.eng-blog %}
-		 {% if post.categories[0] == "en" %}
- 			{{ post.url }}
-			<h2 class="title"><a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax">{{ post.title }}</a></h2>
-		{% endif %}
- {% endfor %}
-
-
-</div>
+				<div class='blogpost-content'>
+					{% if post.header-image %}
+						<img class='blogpost-image' src={{post.header-image}}> 
+					{% endif %}
+					<p class='blogpost-excerpt'> 
+						{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}
+					</p>
+				</div>
+			</div>
+		 {% endfor %}
+ 	</section>
+</main>
