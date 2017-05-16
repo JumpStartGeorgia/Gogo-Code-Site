@@ -12,8 +12,6 @@ collections:
     title: eng-blog
     output: true
     permalink: "/:categories/blog/:year/:month/:day/:title.html."
-    slideshow:
-    - 
   ka-blog:
     title: ka-blog
     output: true
