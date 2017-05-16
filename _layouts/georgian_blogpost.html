@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='ka'>
+  {% include head.html %}
+  <body class='blogpost'>
+
+    <div class='wrapper'>
+    
+    {% include georgian/header.html %}
+
+    <main class='navbar-distance'>
+      <section class="section u-limit-content-width slideshow">
+        <div class="slideshow-items-wrapper">
+          {% assign high_index = 0  %}
+          {% for img in page.slideshow %}
+            <div class="slideshow-item" data-index={{ high_index }}>
+              <img class='slideshow-image' src='{{ img[1] }}'> 
+            </div>
+             {% assign high_index = high_index | plus: 1 %}
+          {% endfor %}
+        </div>
+
+        <a class="slideshow-next-prev-button prev"> < </a>
+
+        <a class="slideshow-next-prev-button next"> > </a>
+      </section>
+    </main>
+
+
+      <!-- <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allowfullscreen></iframe>       -->
+
+
+      {{ content }}
+
+    </div>
+    {% include scripts.html %}
+    {% include slideshow_scripts.html %}
+
+  </body>
+
+</html>
