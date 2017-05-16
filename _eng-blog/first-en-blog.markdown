@@ -4,6 +4,9 @@ date: 2017-05-10 16:39:00 +04:00
 categories:
 - en
 header-image: "/uploads/flying-painter.jpg"
+video: https://www.youtube.com/watch?v=kHwRKn273Fs
+slideshow:
+  image: "/uploads/cantgo.png"
 layout: blogpost
 ---
 
