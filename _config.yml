@@ -23,4 +23,4 @@ baseurl:
 url: http://gogocode.jumpstart.ge/
 github_username: JumpStartGeorgia
 markdown: kramdown
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
