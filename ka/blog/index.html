@@ -2,21 +2,24 @@
 layout: georgian_blog
 ---
 
+
 <main class='navbar-distance'>
 	<section class='section u-limit-content-width blog-list'>
 		{% assign sorted = (site.ka-blog | sort: 'date') | reverse %}
 		 {% for post in sorted %}
-			<div class='blogpost'>
+			<div class='blogpost-wrap'>
 				<div class='blogpost-header blogpost-element'>	
-					<a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax"><h1 class="blog-title">{{ post.title }}</h1></a>
-					<div class='blog-date'> {{ post.date | date: '%B %d, %Y' }} </div>
+					<a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax  blogpost-link"><h1 class="blogpost-title">{{ post.title }}</h1></a>
+					<div class='blogpost-date'> {{ post.date | date: '%B %d, %Y' }} </div>
 				</div>
 
 				<div class='blogpost-content blogpost-element'>
 					{% if post.header-image %}
+					<a href="{{ post.url | prepend: site.baseurl  }}" class="blogpost-image-link">
 						<img class='blogpost-image' src={{post.header-image}}> 
+					</a>
 					{% endif %}
-					<p class='blogpost-excerpt'> 
+					<p class='blogpost-text'> 
 						{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}
 					</p>
 				</div>

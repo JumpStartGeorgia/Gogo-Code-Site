@@ -22,8 +22,8 @@ gogoCode.setupMobileNavButton();
 (function() {
   if($('.popup').length > 0) {
     $('.popup').fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none',
+          autoScale: false,
+          autoDimensions: true,
           helpers : {
               media : {}
           }
@@ -74,6 +74,8 @@ var remove_hover_for_touch_device = function() {
   $(document).ready(function(){
     if(!is_touch_device()) {
       $('body').addClass('not-touch');
+    } else {
+       $('body').addClass('touch');
     }
   });
 }
