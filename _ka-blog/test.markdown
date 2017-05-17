@@ -1,6 +1,6 @@
 ---
 title: Test
-date: 2017-05-10 13:07:00 Z
+date: 2017-05-10 17:07:00 +04:00
 categories:
 - ka
 layout: georgian_blogpost
