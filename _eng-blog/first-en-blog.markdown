@@ -1,5 +1,5 @@
 ---
-title: First En Blog
+title: First Blog
 date: 2017-05-10 16:39:00 +04:00
 categories:
 - en
@@ -10,6 +10,7 @@ slideshow:
   s2_image: "/uploads/flying-painter-023ba5.jpg"
   s3_image: "/uploads/chatwallpaper.jpg"
 popup_image: "/uploads/flying-painter-023ba5.jpg"
+lang-title: First Blog
 layout: english_blogpost
 ---
 
