@@ -10,7 +10,7 @@ slideshow:
   s2_image: "/uploads/flying-painter-023ba5.jpg"
   s3_image: "/uploads/chatwallpaper.jpg"
 popup_image: "/uploads/flying-painter-023ba5.jpg"
-lang-title: First Blog
+slug: First Blog
 layout: english_blogpost
 ---
 
