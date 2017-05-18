@@ -5,7 +5,6 @@ categories:
 - en
 header_image: "/uploads/flying-painter.jpg"
 popup_image: "/uploads/dont-limit-her-possibilities_en_original.jpg"
-slug: First Blog
 layout: english_blogpost
 ---
 
