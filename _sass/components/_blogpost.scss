@@ -74,12 +74,13 @@ $slideshow-wrapper-height: 500px;
 
 	.popup-image a {
 		position: relative;
-		max-height: 70vh;
+		max-width: 60%;
+		max-height: 600px;
 		background-color: black;
 	}
 
 	.popup-image img {
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 		opacity: 0.7;
 		transition: all 0.2s;
@@ -177,5 +178,17 @@ body.touch.blogpost .popup-image a {
 	.blogpost .blogpost-video iframe.video {
 		width: 280px !important;
 		height: 158px !important;
+	}
+}
+
+@media screen and (max-height: 900px) {
+	.blogpost .popup-image a {
+		max-height: 400px;
+	}
+}
+
+@media screen and (max-height: 700px) {
+	.blogpost .popup-image a {
+		max-height: 300px;
 	}
 }

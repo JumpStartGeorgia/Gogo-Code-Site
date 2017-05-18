@@ -4,7 +4,6 @@ date: 2017-05-10 16:39:00 +04:00
 categories:
 - en
 header_image: "/uploads/flying-painter.jpg"
-video: "https://www.youtube.com/embed/tjXWd3EDG5s?ecver=2"
 popup_image: "/uploads/dont-limit-her-possibilities_en_original.jpg"
 slug: First Blog
 layout: english_blogpost
