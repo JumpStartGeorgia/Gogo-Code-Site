@@ -9,7 +9,7 @@ slideshow:
   s1_image: "/uploads/cantgo.png"
   s2_image: "/uploads/flying-painter-023ba5.jpg"
   s3_image: "/uploads/chatwallpaper.jpg"
-popup_image: "/uploads/flying-painter-023ba5.jpg"
+popup_image: "/uploads/dont-limit-her-possibilities_en_original.jpg"
 slug: First Blog
 layout: english_blogpost
 ---
