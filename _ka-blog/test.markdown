@@ -4,6 +4,8 @@ date: 2017-05-10 17:07:00 +04:00
 categories:
 - ka
 slug: Test
+header_image: "/uploads/flying-painter-023ba5.jpg"
+video: https://www.youtube.com/embed/tjXWd3EDG5s?ecver=2
 layout: georgian_blogpost
 ---
 
