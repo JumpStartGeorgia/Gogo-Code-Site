@@ -29,6 +29,16 @@ gogoCode.setupMobileNavButton();
           }
     });
   }
+
+  if($('.image_popup').length > 0) {
+    $('.image_popup').fancybox({
+          fitToView: false,
+          helpers : {
+              media : {}
+          }
+    });
+  }
+
 })();
 
 

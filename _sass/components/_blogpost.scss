@@ -2,7 +2,6 @@ $slideshow-wrapper-height: 500px;
 
 .blogpost {
 
-	
 	.slideshow {
 		display: flex;
 		justify-content: center;
@@ -105,12 +104,19 @@ $slideshow-wrapper-height: 500px;
 
 	}
 
+	.blogpost-video iframe.video {
+		width: 854px !important;
+		height: 480px !important;
+	}
+
+
 	.blogpost-text img {
 		display: block;
 		margin: 20px auto;
 		width: 60%;
 		height: auto;
 	}
+
 
 }
 
@@ -149,5 +155,27 @@ body.touch.blogpost .popup-image a {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+
+@media screen and (max-width: 1020px) {
+	.blogpost .blogpost-video iframe.video {
+		width: 640px !important;
+		height: 360px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.blogpost .blogpost-video iframe.video {
+		width: 426px !important;
+		height: 240px !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.blogpost .blogpost-video iframe.video {
+		width: 280px !important;
+		height: 158px !important;
 	}
 }

@@ -40,7 +40,7 @@
 
       {% if page.popup_image %}
       <section class='flex-centered-horizontal flex section u-limit-content-width popup-image'>
-        <a class='flex-centered flex popup fancybox' href='{{ page.popup_image }}'>
+        <a class='flex-centered flex image_popup fancybox' href='{{ page.popup_image }}'>
           <img src='{{ page.popup_image }}'> 
           <div class='click flex-centered flex'>
             {% include icons/click.svg %}
@@ -49,17 +49,21 @@
       </section>
       {% endif %}
 
-
+      {% if page.video %}
+      <section class='flex-centered-horizontal flex section u-limit-content-width blogpost-video'>
+        <iframe  class='video' src="{{page.video}}" frameborder="0" allowfullscreen></iframe>      
+      </section>
+      {% endif %}
+      
       <section class="section u-limit-content-width content">
-        <p class='blogpost-text'>
+        <div class='blogpost-text'>
           {{ content | remove: '<p>' | remove: '<p>' }}
-        </p>
+        </div>
       </section>
 
     </main>
 
 
-      <!-- <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allowfullscreen></iframe>       -->
 
     {% include georgian/footer.html %}
 

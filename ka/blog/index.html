@@ -13,14 +13,14 @@ layout: georgian_blog
 				</div>
 
 				<div class='blogpost-content blogpost-element'>
-					{% if post.header-image %}
+					{% if post.header_image %}
 					<a href="{{ post.url | prepend: site.baseurl  }}" class="blogpost-image-link">
-						<img class='blogpost-image' src={{post.header-image}}> 
+						<img class='blogpost-image' src={{post.header_image}}> 
 					</a>
 					{% endif %}
-					<p class='blogpost-text'> 
+					<div class='blogpost-text'> 
 						{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}
-					</p>
+					</div>
 				</div>
 			</div>
 		 {% endfor %}
