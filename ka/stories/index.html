@@ -1,0 +1,28 @@
+---
+layout: georgian_stories
+---
+
+<main class='navbar-distance'>
+	<section class='section u-limit-content-width stories-list'>
+		{% assign sorted = (site.ka-stories | sort: 'date') | reverse %}
+		 {% for post in sorted %}
+			<div class='story-wrap'>
+				<div class='story-header story-element'>	
+					<a href="{{ post.url | prepend: site.baseurl  }}" class="js-pjax  story-link"><h1 class="story-title">{{ post.title }}</h1></a>
+					<div class='story-date'> {{ post.date | date: '%B %d, %Y' }} </div>
+				</div>
+
+				<div class='story-content story-element'>
+					{% if post.header_image %}
+					<a href="{{ post.url | prepend: site.baseurl  }}" class="story-image-link">
+						<img class='story-image' src={{post.header_image}}> 
+					</a>
+					{% endif %}
+					<div class='story-text'> 
+						{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}
+					</div>
+				</div>
+			</div>
+		 {% endfor %}
+ 	</section>
+</main>

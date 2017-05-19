@@ -5,7 +5,7 @@ categories:
 - ka
 slug: first-blog
 video: https://youtu.be/luM6oeCM7Yw
-layout: georgian_blogpost
+layout: georgian_story
 ---
 
 ასლკდჯ ლკჯცვ ხლკვ 

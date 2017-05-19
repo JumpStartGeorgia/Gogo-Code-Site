@@ -1,31 +1,31 @@
 
 
 
-.blogpost-wrap {
+.story-wrap {
 	padding: 20px 0;
 	border-width: 0 0 2px 0;
 	border-style: solid;
 	border-color: #ebeaf2;
 }
 
-.blog-list div:last-child {
+.story-wrap div:last-child {
 	border: none;
 }
 
 
-.blogpost-element {
+.story-element {
 	display: flex;
 	flex-direction: column;
 	align-items: center;			
 	width: 100%;
 }
 
-.blogpost-header {
+.story-header {
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-.blogpost-title {
+.story-title {
 	margin: 0 0 5px 0;
 	transition: all 0.2s;
 	color: $text-color;
@@ -41,7 +41,7 @@
 	}
 }
 
-.blogpost-text, .blog-date {
+.story-text, .story-date {
 
 	&:lang(en) {
 	  font-family: $primary-font-family;
@@ -52,15 +52,15 @@
 	}
 }
 
-.blogpost-date {
+.story-date {
 	font-weight: 100;
 	color: $minor-text-color;
 }
 
-.blogpost-image-link {
+.story-image-link {
 	max-width: 80%;
 
-	.blogpost-image {
+	.story-image {
 		display: block;
 		width: 100%;
 		height: auto;
@@ -71,7 +71,7 @@
 
 
 
-.blogpost-text {
+.story-text {
 	margin-top: 20px;
 	font-size: 20px;
 	line-height: 25px;
@@ -96,20 +96,20 @@
 }
 
 
-body.not-touch .blogpost-link:hover .blogpost-title{
+body.not-touch .story-link:hover .story-title{
 	color: $primary-color !important;
 }
 
 @media screen and (max-width: 800px) {
-	.blogpost-title {
+	.story-title {
 		font-size: 28px;
 	}
 
-	.blogpost-date {
+	.story-date {
 		font-size: 15px;
 	}
 
-	.blogpost-text {
+	.story-text {
 		font-size: 17px;
 		line-height: 22px;
 

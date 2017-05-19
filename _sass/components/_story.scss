@@ -1,6 +1,6 @@
 $slideshow-wrapper-height: 500px;
 
-.blogpost {
+.story {
 
 	.slideshow {
 		display: flex;
@@ -105,13 +105,13 @@ $slideshow-wrapper-height: 500px;
 
 	}
 
-	.blogpost-video iframe.video {
+	.story-video iframe.video {
 		width: 854px !important;
 		height: 480px !important;
 	}
 
 
-	.blogpost-text img {
+	.story-text img {
 		display: block;
 		margin: 20px auto;
 		width: 60%;
@@ -121,14 +121,14 @@ $slideshow-wrapper-height: 500px;
 
 }
 
-body.not-touch.blogpost .slideshow .slideshow-next-prev-button:hover {
+body.not-touch.story .slideshow .slideshow-next-prev-button:hover {
 	svg path {
 		fill: $secondary-color;
 	}
 }
 
 
-body.not-touch.blogpost .popup-image a {
+body.not-touch.story .popup-image a {
 	&:hover {
 		svg {
 			opacity: 1;
@@ -140,7 +140,7 @@ body.not-touch.blogpost .popup-image a {
 	}
 }
 
-body.touch.blogpost .popup-image a {
+body.touch.story .popup-image a {
 	svg {
 		opacity: 1;
 	}
@@ -161,34 +161,34 @@ body.touch.blogpost .popup-image a {
 
 
 @media screen and (max-width: 1020px) {
-	.blogpost .blogpost-video iframe.video {
+	.story .story-video iframe.video {
 		width: 640px !important;
 		height: 360px !important;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.blogpost .blogpost-video iframe.video {
+	.story .story-video iframe.video {
 		width: 426px !important;
 		height: 240px !important;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	.blogpost .blogpost-video iframe.video {
+	.story .story-video iframe.video {
 		width: 280px !important;
 		height: 158px !important;
 	}
 }
 
 @media screen and (max-height: 900px) {
-	.blogpost .popup-image a {
+	.story .popup-image a {
 		max-height: 400px;
 	}
 }
 
 @media screen and (max-height: 700px) {
-	.blogpost .popup-image a {
+	.story .popup-image a {
 		max-height: 300px;
 	}
 }

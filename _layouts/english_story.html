@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang='ka'>
+<html lang='en'>
   {% include head.html %}
-  <body class='blogpost'>
+  <body class='story'>
 
     <div class='wrapper'>
     
-    {% include georgian/header.html %}
+    {% include english/header.html %}
 
     <main class='navbar-distance'>
 
-      <section class='section blogpost-header blogpost-element'>  
-        <h1 class="blogpost-title">{{ page.title }}</h1>
-        <div class='blogpost-date'> {{ page.date | date: '%B %d, %Y' }} </div>
+      <section class='section story-header story-element'>  
+        <h1 class="story-title">{{ page.title }}</h1>
+        <div class='story-date'> {{ page.date | date: '%B %d, %Y' }} </div>
       </section>
 
       {% if page.slideshow %}
       <section class="section u-limit-content-width slideshow">
-        <div class="slideshow-items-wrapper flex-centered flex">
+        <div class="slideshow-items-wrapper flex-centered-vertical flex">
           {% assign high_index = 0  %}
           {% for img in page.slideshow %}
             <div class="slideshow-item" data-index={{ high_index }}>
@@ -50,13 +50,15 @@
       {% endif %}
 
       {% if page.video %}
-      <section class='flex-centered-horizontal flex section u-limit-content-width blogpost-video'>
-        <iframe  class='video' src="{{page.video}}" frameborder="0" allowfullscreen></iframe>      
+      {% assign vid_id = page.video | split: '/' | last %}
+      <section class='flex-centered-horizontal flex section u-limit-content-width story-video'>
+        <iframe  class='video' src="http://www.youtube.com/embed/{{vid_id}}" frameborder="0" allowfullscreen></iframe>      
       </section>
       {% endif %}
-      
+
+
       <section class="section u-limit-content-width content">
-        <div class='blogpost-text'>
+        <div class='story-text'>
           {{ content | remove: '<p>' | remove: '<p>' }}
         </div>
       </section>
@@ -65,7 +67,7 @@
 
 
 
-    {% include georgian/footer.html %}
+    {% include english/footer.html %}
 
     </div>
     {% include scripts.html %}

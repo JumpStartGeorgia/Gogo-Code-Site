@@ -5,7 +5,7 @@ categories:
 - ka
 slug: test
 header_image: "/uploads/flying-painter-023ba5.jpg"
-layout: georgian_blogpost
+layout: georgian_story
 ---
 
 ტესტი ქართულად ასდკლჯ კაჯსდ კაჯკსდ აჯსკდ აკსდ ჯტესტი ქართულად ასდკლჯ კაჯსდ კაჯკსდ აჯსკდ აკსდ ჯტესტი ქართულად ასდკლჯ კაჯსდ კაჯკსდ აჯსკდ აკსდ ჯტესტი ქართულად <!--more--> ასდკლჯ კაჯსდ კაჯკსდ აჯსკდ აკსდ

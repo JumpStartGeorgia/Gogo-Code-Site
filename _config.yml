@@ -8,14 +8,14 @@ collections:
   uploads:
     title: Uploads
     output: true
-  eng-blog:
-    title: eng-blog
+  eng-stories:
+    title: eng-stories
     output: true
-    permalink: "/:categories/blog/:title"
-  ka-blog:
-    title: ka-blog
+    permalink: "/:categories/stories/:title"
+  ka-stories:
+    title: ka-stories
     output: true
-    permalink: "/:categories/blog/:title"
+    permalink: "/:categories/stories/:title"
 email: info@jumpstart.ge
 description: Gogo Code is a program to teach teenage girls in Georgia the basics of
   computer programming and encourage participation in STEM fields.
