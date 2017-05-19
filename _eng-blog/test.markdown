@@ -6,7 +6,7 @@ categories:
 header_image: "/uploads/chatwallpaper.jpg"
 slideshow:
   s1_image: "/uploads/chatwallpaper.jpg"
-  s2_image: "/uploads/flying-painter-023ba5.jpg"
+  s2_image: "/uploads/chatwallpaper.jpg"
 slug: Test
 layout: english_blogpost
 ---
