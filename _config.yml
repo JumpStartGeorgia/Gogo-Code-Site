@@ -16,6 +16,22 @@ collections:
     title: ka-stories
     output: true
     permalink: "/:categories/stories/:title"
+defaults:
+- scope:
+    path: ''
+    type: eng-stories
+  values:
+    layout: english_story
+    categories:
+    - en
+    video: "--"
+- scope:
+    path: ''
+    type: ka-stories
+  values:
+    layout: georgian_story
+    categories:
+    - ka
 email: info@jumpstart.ge
 description: Gogo Code is a program to teach teenage girls in Georgia the basics of
   computer programming and encourage participation in STEM fields.
@@ -25,22 +41,3 @@ github_username: JumpStartGeorgia
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 permalink: pretty
-
-defaults:
-  - 
-    scope:
-      path: ""
-      type: eng-stories
-    values:
-      layout: english_story 
-      categories:
-        - en
-      video: "--" 
-  - 
-    scope:
-      path: ""
-      type: ka-stories
-    values:
-      layout: georgian_story
-      categories:
-        - ka 

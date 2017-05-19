@@ -6,7 +6,6 @@ slideshow:
   s1_image: "/uploads/chatwallpaper.jpg"
   s2_image: "/uploads/chatwallpaper.jpg"
   s3_image: "/uploads/cantgo.png"
-slug: test
 ---
 
 Test in English asdj Asdj jkajsdk jk AJKsdj akjsk <!--more-->  asdlkajsdkl ajlksdjalksjd lkajdclsjadk alksjdlmcaksdj aksdjlmjlk  asdacds asdlkajsdkl ajlksdjalksjd lkajdclsjadk alksjdlmcaksdj aksdjlmjlk  asdacds asdlkajsdkl ajlksdjalksjd lkajdclsjadk alksjdlmcaksdj aksdjlmjlk  asdacds asdlkajsdkl ajlksdjalksjd lkajdclsjadk alksjdlmcaksdj aksdjlmjlk  asdacds asdlkajsdkl ajlksdjalksjd lkajdclsjadk alksjdlmcaksdj aksdjlmjlk  asdacds asdlkajsdkl ajlksdjalksjd lkajdclsjadk alksjdlmcaksdj aksdjlmjlk  asdacds
