@@ -25,3 +25,22 @@ github_username: JumpStartGeorgia
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 permalink: pretty
+
+defaults:
+  - 
+    scope:
+      path: ""
+      type: eng-stories
+    values:
+      layout: english_story 
+      categories:
+        - en
+      video: "--" 
+  - 
+    scope:
+      path: ""
+      type: ka-stories
+    values:
+      layout: georgian_story
+      categories:
+        - ka 
