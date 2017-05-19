@@ -4,7 +4,7 @@ date: 2017-05-10 16:39:00 +04:00
 categories:
 - ka
 slug: First Blog
-video: https://youtu.be/XUjAtYQkFm8
+video: https://youtu.be/luM6oeCM7Yw
 layout: georgian_blogpost
 ---
 
