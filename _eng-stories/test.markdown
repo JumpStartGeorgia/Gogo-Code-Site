@@ -8,7 +8,6 @@ slideshow:
   s1_image: "/uploads/chatwallpaper.jpg"
   s2_image: "/uploads/chatwallpaper.jpg"
   s3_image: "/uploads/cantgo.png"
-slug: test
 layout: english_story
 ---
 

@@ -3,7 +3,6 @@ title: ტესტი
 date: 2017-05-10 17:07:00 +04:00
 categories:
 - ka
-slug: test
 header_image: "/uploads/flying-painter-023ba5.jpg"
 layout: georgian_story
 ---
