@@ -7,6 +7,7 @@ header_image: "/uploads/chatwallpaper.jpg"
 slideshow:
   s1_image: "/uploads/chatwallpaper.jpg"
   s2_image: "/uploads/chatwallpaper.jpg"
+slug: Test
 layout: english_blogpost
 ---
 
