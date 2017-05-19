@@ -35,7 +35,13 @@ defaults:
       layout: english_story 
       categories:
         - en
-      video: "--" 
+      video: "Add your video link here / if there is no video, remove this field" 
+      slug: "Add english name of the story here / use small letters"
+      header_image: "Main picture of the story, that will appear on the stories page / if there is no image, remove this field"
+      popup_image: "Popup image, that could be viewed full size on the story page by clicking on it / if there is no image, remove this field "
+      slideshow: "Convert this field to Object, than add images - each key should have an unique name that contains word 'image' (s1_image, s2_image) 
+        / if there is no image, remove this field "
+
   - 
     scope:
       path: ""
@@ -44,3 +50,9 @@ defaults:
       layout: georgian_story
       categories:
         - ka 
+      video: "დაამატე შენი ვიდეოს ლინკი აქ / თუ ვიდეო არ გაქვს, წაშალე ეს ველი"
+      slug: "დაამატე ამბის ინგლისური სახელი აქ / გამოიყენე მხოლოდ პატარა ასოები"
+      header_image: "მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება / თუ არ გაქვს, წაშალე ეს ველი"
+      popup_image: "Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება დაკლიკვის შემდეგ / თუ არ გაქვს, წაშალე ეს ველი"
+      slideshow: "აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image) 
+        / თუ არ გაქვს სურათები, წაშალე ეს ველი"
