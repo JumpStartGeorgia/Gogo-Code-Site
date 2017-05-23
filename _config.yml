@@ -16,22 +16,6 @@ collections:
     title: ka-stories
     output: true
     permalink: "/:categories/stories/:title"
-defaults:
-- scope:
-    path: ''
-    type: eng-stories
-  values:
-    layout: english_story
-    categories:
-    - en
-    video: "--"
-- scope:
-    path: ''
-    type: ka-stories
-  values:
-    layout: georgian_story
-    categories:
-    - ka
 email: info@jumpstart.ge
 description: Gogo Code is a program to teach teenage girls in Georgia the basics of
   computer programming and encourage participation in STEM fields.
@@ -79,4 +63,3 @@ defaults:
       header_image: "მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება / წაშალე ველი, თუ არ გჭირდება."
       popup_image: "Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება დაკლიკვის შემდეგ / წაშალე ველი, თუ არ გჭირდება."
       slideshow: "აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image)  / წაშალე ველი, თუ არ გჭირდება."
-
