@@ -42,6 +42,15 @@ markdown: kramdown
 excerpt_separator: "<!--more-->"
 permalink: pretty
 
+video_eng: "Add your video link here" 
+header_image_eng: "Main picture of the story, that will appear on the stories page"
+popup_image_eng: "Popup image, that could be viewed full size on the story page by clicking on it"
+slideshow_eng: "Convert this field to Object, then add images - each key should have an unique name that contains word 'image' (s1_image, s2_image)"
+video_ka: "დაამატე შენი ვიდეოს ლინკი აქ"
+header_image_ka: "მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება"
+popup_image_ka: "Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება დაკლიკვის შემდეგ"
+slideshow_ka: "აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image)"
+
 defaults:
   - 
     scope:
@@ -51,12 +60,11 @@ defaults:
       layout: english_story 
       categories:
         - en
-      video: "Add your video link here / if there is no video, remove this field" 
       slug: "Add english name of the story here / use small letters"
-      header_image: "Main picture of the story, that will appear on the stories page / if there is no image, remove this field"
-      popup_image: "Popup image, that could be viewed full size on the story page by clicking on it / if there is no image, remove this field "
-      slideshow: "Convert this field to Object, than add images - each key should have an unique name that contains word 'image' (s1_image, s2_image) 
-        / if there is no image, remove this field "
+      video: video_eng
+      header_image: "Main picture of the story, that will appear on the stories page"
+      popup_image: "Popup image, that could be viewed full size on the story page by clicking on it"
+      slideshow: "Convert this field to Object, then add images - each key should have an unique name that contains word 'image' (s1_image, s2_image)"
 
   - 
     scope:
@@ -66,10 +74,9 @@ defaults:
       layout: georgian_story
       categories:
         - ka 
-      video: "დაამატე შენი ვიდეოს ლინკი აქ / თუ ვიდეო არ გაქვს, წაშალე ეს ველი"
       slug: "დაამატე ამბის ინგლისური სახელი აქ / გამოიყენე მხოლოდ პატარა ასოები"
-      header_image: "მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება / თუ არ გაქვს, წაშალე ეს ველი"
-      popup_image: "Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება დაკლიკვის შემდეგ / თუ არ გაქვს, წაშალე ეს ველი"
-      slideshow: "აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image) 
-        / თუ არ გაქვს სურათები, წაშალე ეს ველი"
+      video: "დაამატე შენი ვიდეოს ლინკი აქ"
+      header_image: "მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება"
+      popup_image: "Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება დაკლიკვის შემდეგ"
+      slideshow: "აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image)"
 
