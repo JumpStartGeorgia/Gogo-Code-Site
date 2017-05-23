@@ -1,6 +1,7 @@
 ---
 title: Test
 date: 2017-05-10 17:06:00 +04:00
+slug: test
 header_image: "/uploads/chatwallpaper.jpg"
 slideshow:
   s1_image: "/uploads/chatwallpaper.jpg"
