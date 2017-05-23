@@ -25,14 +25,12 @@ defaults:
     categories:
     - en
     slug: Add english name of the story here / use small letters
-    video: Add your video link here / Delete this field if not needed.
-    header_image: Main picture of the story, that will appear on the stories page
-      / Delete this field if not needed.
+    video: Add your video link here.
+    header_image: Main picture of the story, that will appear on the stories page.
     popup_image: Popup image, that could be viewed full size on the story page by
-      clicking on it / Delete this field if not needed.
+      clicking on it.
     slideshow: Convert this field to Object, then add images - each key should have
-      an unique name that contains word 'image' (s1_image, s2_image) / Delete this
-      field if not needed.
+      an unique name that contains word 'image' (s1_image, s2_image).
 - scope:
     path: ''
     type: ka-stories
@@ -41,14 +39,12 @@ defaults:
     categories:
     - ka
     slug: დაამატე ამბის ინგლისური სახელი აქ / გამოიყენე მხოლოდ პატარა ასოები
-    video: დაამატე შენი ვიდეოს ლინკი აქ / წაშალე ველი, თუ არ გჭირდება.
-    header_image: მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება / წაშალე
-      ველი, თუ არ გჭირდება.
+    video: დაამატე შენი ვიდეოს ლინკი აქ.
+    header_image: მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება.
     popup_image: Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება
-      დაკლიკვის შემდეგ / წაშალე ველი, თუ არ გჭირდება.
+      დაკლიკვის შემდეგ.
     slideshow: აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა
-      ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image)  /
-      წაშალე ველი, თუ არ გჭირდება.
+      ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image).
 email: info@jumpstart.ge
 description: Gogo Code is a program to teach teenage girls in Georgia the basics of
   computer programming and encourage participation in STEM fields.
@@ -58,19 +54,15 @@ github_username: JumpStartGeorgia
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 permalink: pretty
-video_eng: Add your video link here / Delete this field if not needed.
-header_image_eng: Main picture of the story, that will appear on the stories page
-  / Delete this field if not needed.
-popup_image_eng: Popup image, that could be viewed full size on the story page by
-  clicking on it / Delete this field if not needed.
-slideshow_eng: Convert this field to Object, then add images - each key should have
-  an unique name that contains word 'image' (s1_image, s2_image) / Delete this field
-  if not needed.
-video_ka: დაამატე შენი ვიდეოს ლინკი აქ / წაშალე ველი, თუ არ გჭირდება.
-header_image_ka: მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება / წაშალე
-  ველი, თუ არ გჭირდება.
+video_en: Add your video link here.
+header_image_en: Main picture of the story, that will appear on the stories page.
+popup_image_en: Popup image, that could be viewed full size on the story page by
+  clicking on it.
+slideshow_en: Convert this field to Object, then add images - each key should have
+  an unique name that contains word 'image' (s1_image, s2_image).
+video_ka: დაამატე შენი ვიდეოს ლინკი აქ.
+header_image_ka: მთავარი სურათი ამბის, რომელიც ამბების ჩამონათვალში გამოჩნება.
 popup_image_ka: Popup სურათი, რომელიც იქნება ამბის გვერდზე და სრული ზომით გამოჩნდება
-  დაკლიკვის შემდეგ / წაშალე ველი, თუ არ გჭირდება.
+  დაკლიკვის შემდეგ.
 slideshow_ka: აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა
-  ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image)  /
-  წაშალე ველი, თუ არ გჭირდება.
+  ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image).

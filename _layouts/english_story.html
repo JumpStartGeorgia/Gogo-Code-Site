@@ -14,46 +14,44 @@
         <div class='story-date'> {{ page.date | date: '%B %d, %Y' }} </div>
       </section>
 
-      {% if page.slideshow %}
-      <section class="section u-limit-content-width slideshow">
-        <div class="slideshow-items-wrapper flex-centered-vertical flex">
-          {% assign high_index = 0  %}
-          {% for img in page.slideshow %}
-            <div class="slideshow-item" data-index={{ high_index }}>
-              <img class='slideshow-image' src='{{ img[1] }}'> 
-            </div>
-             {% assign high_index = high_index | plus: 1 %}
-          {% endfor %}
-        </div>
-
-        <a class="slideshow-next-prev-button prev">  
-          {% include icons/arrow.svg %}
-        </a>
-
-        <a class="slideshow-next-prev-button next">
-          {% include icons/arrow.svg %}
-        </a>
-      </section>
-      {% endif %}
-      
-
-
-      {% if page.popup_image %}
-      <section class='flex-centered-horizontal flex section u-limit-content-width popup-image'>
-        <a class='flex-centered flex image_popup fancybox' href='{{ page.popup_image }}'>
-          <img src='{{ page.popup_image }}'> 
-          <div class='click flex-centered flex'>
-            {% include icons/click.svg %}
+      {% if page.slideshow != site.slideshow_en %}
+        <section class="section u-limit-content-width slideshow">
+          <div class="slideshow-items-wrapper flex-centered-vertical flex">
+            {% assign high_index = 0  %}
+            {% for img in page.slideshow %}
+              <div class="slideshow-item" data-index={{ high_index }}>
+                <img class='slideshow-image' src='{{ img[1] }}'> 
+              </div>
+               {% assign high_index = high_index | plus: 1 %}
+            {% endfor %}
           </div>
-        </a>
-      </section>
+
+          <a class="slideshow-next-prev-button prev">  
+            {% include icons/arrow.svg %}
+          </a>
+
+          <a class="slideshow-next-prev-button next">
+            {% include icons/arrow.svg %}
+          </a>
+        </section>
       {% endif %}
 
-      {% if page.video %}
-      {% assign vid_id = page.video | split: '/' | last %}
-      <section class='flex-centered-horizontal flex section u-limit-content-width story-video'>
-        <iframe  class='video' src="http://www.youtube.com/embed/{{vid_id}}" frameborder="0" allowfullscreen></iframe>      
-      </section>
+      {% if page.popup_image != site.popup_image_en %}
+        <section class='flex-centered-horizontal flex section u-limit-content-width popup-image'>
+          <a class='flex-centered flex image_popup fancybox' href='{{ page.popup_image }}'>
+            <img src='{{ page.popup_image }}'> 
+            <div class='click flex-centered flex'>
+              {% include icons/click.svg %}
+            </div>
+          </a>
+        </section>
+      {% endif %}
+
+      {% if page.video != site.video_en %}
+        {% assign vid_id = page.video | split: '/' | last %}
+        <section class='flex-centered-horizontal flex section u-limit-content-width story-video'>
+          <iframe  class='video' src="http://www.youtube.com/embed/{{vid_id}}" frameborder="0" allowfullscreen></iframe>      
+        </section>
       {% endif %}
 
 
