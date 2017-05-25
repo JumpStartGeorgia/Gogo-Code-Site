@@ -1,0 +1,28 @@
+.error-page, .error-page .wrapper {
+	height: 100vh;
+}
+
+.error-page {
+
+	.error_message {
+		font-size: 3em;
+	}
+
+	svg {
+		width: 400px;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.error-page svg {
+		
+		.error_message {
+			font-size: 1em;
+		}
+
+		width: 200px;
+		height: auto;
+	}
+}

@@ -2,13 +2,13 @@
 
 
 .story-wrap {
-	padding: 20px 0;
+	padding: 50px 0;
 	border-width: 0 0 2px 0;
 	border-style: solid;
 	border-color: #ebeaf2;
 }
 
-.story div:last-child {
+.stories-list div:last-child {
 	border: none;
 }
 
@@ -74,7 +74,7 @@
 .story-text {
 	margin-top: 20px;
 	font-size: 20px;
-	line-height: 25px;
+	line-height: 1.6;
 	font-weight: 300;
 
 	h1, h2, h3 {
@@ -111,7 +111,6 @@ body.not-touch .story-link:hover .story-title{
 
 	.story-text {
 		font-size: 17px;
-		line-height: 22px;
 
 		h1 {
 			font-size: 26px;

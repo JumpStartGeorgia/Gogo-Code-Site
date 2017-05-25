@@ -66,3 +66,7 @@ popup_image_ka: Popup სურათი, რომელიც იქნებ�
   დაკლიკვის შემდეგ.
 slideshow_ka: აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა
   ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image).
+gems:
+  - jekyll-redirect-from
+host: 192.168.1.135
+port: 8080

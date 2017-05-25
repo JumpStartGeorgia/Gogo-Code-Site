@@ -15,7 +15,7 @@ $slideshow-wrapper-height: 500px;
 
 	.slideshow .slideshow-item {
 		display: none;
-
+		width: 100%;
 		&.active {
 			display: inline-block;
 			.slideshow-image {
@@ -86,9 +86,10 @@ $slideshow-wrapper-height: 500px;
 		transition: all 0.2s;
 	}
 
-
 	.popup-image .click {
 		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
 
@@ -109,7 +110,6 @@ $slideshow-wrapper-height: 500px;
 		width: 854px !important;
 		height: 480px !important;
 	}
-
 
 	.story-text img {
 		display: block;

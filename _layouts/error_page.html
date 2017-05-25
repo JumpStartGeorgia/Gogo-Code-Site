@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  {% include simple_head.html %}
+
+  <body class='error-page'>
+
+    <div class='flex flex-centered-vertical wrapper'>
+
+      <div class=' flex flex-centered header-mobile-brand'>
+        <a class=' flex flex-centered logo-link' href='{{ "/ka" | prepend: site.baseurl }}'>
+          {% include icons/gogo-code-logo.svg %}
+        </a>
+      </div>
+
+      {{ content }}
+
+    </div>
+
+  </body>
+
+
+</html>
