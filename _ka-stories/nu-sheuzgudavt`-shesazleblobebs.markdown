@@ -2,7 +2,6 @@
 title: ნუ შეუზღუდავთ შესაძლებლობებს!
 date: 2017-05-25 11:58:00 +04:00
 slug: dont limit her possibilities
-video: https://youtu.be/275UZJ1gsjU
 header_image: "/uploads/nu-sheuzghudavt-shesadzleblobebs_ka_original_header.jpg"
 popup_image: "/uploads/nu-sheuzghudavt-shesadzleblobebs_ka_original.jpg"
 ---
