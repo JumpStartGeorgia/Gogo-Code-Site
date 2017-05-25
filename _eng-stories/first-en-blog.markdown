@@ -2,7 +2,6 @@
 title: First Blog And Other Unimportant Names
 date: 2017-05-10 16:39:00 +04:00
 slug: first blog
-header_image: "/uploads/flying-painter.jpg"
 popup_image: "/uploads/dont-limit-her-possibilities_en_original.jpg"
 ---
 
