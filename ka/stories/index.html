@@ -19,7 +19,7 @@ layout: georgian_stories
 					</a>
 					{% endif %}
 					<div class='story-text'> 
-						{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}
+						{{ post.excerpt | remove: '<p>' | remove: '</p>'  | strip | append: '...' }}
 					</div>
 				</div>
 			</div>

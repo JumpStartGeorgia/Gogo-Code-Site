@@ -8,6 +8,10 @@
 	border-color: #ebeaf2;
 }
 
+.stories-list div:first-child {
+	padding-top: 20px;
+}
+
 .stories-list div:last-child {
 	border: none;
 }
@@ -58,8 +62,8 @@
 }
 
 .story-image-link {
-	max-width: 80%;
-
+	width: 100%;
+	
 	.story-image {
 		display: block;
 		width: 100%;
@@ -101,6 +105,10 @@ body.not-touch .story-link:hover .story-title{
 }
 
 @media screen and (max-width: 800px) {
+	.stories-list div:first-child {
+		padding-top: 10px;
+	}
+
 	.story-title {
 		font-size: 28px;
 	}

@@ -38,10 +38,4 @@
 .section-redirection {
   position: absolute;
   left: 0;
-  top: $header-hidden-nav-height-scrolled-sections;
-
-  @media (min-width: $hide-nav-width) {
-    top: $header-displayed-nav-height-scrolled-sections;
-  }
-
 }

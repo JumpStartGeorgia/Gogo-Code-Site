@@ -74,7 +74,7 @@ $slideshow-wrapper-height: 500px;
 
 	.popup-image a {
 		position: relative;
-		max-width: 60%;
+		width: 100%;
 		max-height: 600px;
 		background-color: black;
 	}
@@ -96,7 +96,6 @@ $slideshow-wrapper-height: 500px;
 		svg {
 			width: 100px;
 			height: auto;
-			opacity: 0.8;
 			transition: all 0.2s;
 		}
 
@@ -130,9 +129,6 @@ body.not-touch.story .slideshow .slideshow-next-prev-button:hover {
 
 body.not-touch.story .popup-image a {
 	&:hover {
-		svg {
-			opacity: 1;
-		}
 
 		img {
 			opacity: 0.5;

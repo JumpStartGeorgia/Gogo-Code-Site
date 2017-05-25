@@ -34,9 +34,7 @@
             {% include icons/arrow.svg %}
           </a>
         </section>
-      {% endif %}
-
-      {% if page.popup_image != site.popup_image_ka %}
+      {% elsif page.popup_image != site.popup_image_ka %}
         <section class='flex-centered-horizontal flex section u-limit-content-width popup-image'>
           <a class='flex-centered flex image_popup fancybox' href='{{ page.popup_image }}'>
             <img src='{{ page.popup_image }}'> 
@@ -45,9 +43,7 @@
             </div>
           </a>
         </section>
-      {% endif %}
-
-      {% if page.video != site.video_ka %}
+      {% elsif page.video != site.video_ka %}
         {% assign vid_id = page.video | split: '/' | last %}
         <section class='flex-centered-horizontal flex section u-limit-content-width story-video'>
           <iframe  class='video' src="http://www.youtube.com/embed/{{vid_id}}" frameborder="0" allowfullscreen></iframe>      

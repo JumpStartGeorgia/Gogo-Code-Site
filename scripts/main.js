@@ -49,9 +49,10 @@ var update_on_scrolled = function() {
   var has_scrolled_class = header.hasClass(scrolled_class);
   var scrolled_height = $(window).scrollTop();
 
-  if( scrolled_height > header_height && !has_scrolled_class) {
+  if(scrolled_height > header_height && !has_scrolled_class) {
     header.addClass(scrolled_class);
   }
+
   else if (scrolled_height <= header_height && has_scrolled_class) {
     header.removeClass(scrolled_class);
   }
