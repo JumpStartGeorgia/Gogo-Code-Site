@@ -113,7 +113,7 @@ $slideshow-wrapper-height: 500px;
 	.story-text img {
 		display: block;
 		margin: 20px auto;
-		width: 60%;
+		width: 80%;
 		height: auto;
 	}
 
@@ -167,6 +167,10 @@ body.touch.story .popup-image a {
 	.story .story-video iframe.video {
 		width: 426px !important;
 		height: 240px !important;
+	}
+
+	.story .story-text img {
+		width: 100%;
 	}
 }
 
