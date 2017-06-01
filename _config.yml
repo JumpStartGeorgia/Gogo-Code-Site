@@ -68,3 +68,4 @@ slideshow_ka: აქციე ეს ველი Object-ად, შემდე
   ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image).
 gems:
 - jekyll-redirect-from  
+
