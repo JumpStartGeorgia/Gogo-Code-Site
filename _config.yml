@@ -67,5 +67,4 @@ popup_image_ka: Popup სურათი, რომელიც იქნებ�
 slideshow_ka: აქციე ეს ველი Object-ად, შემდეგ დაამატე სურათები - ყოველ key-ს უნდა
   ჰქონდეს უნიკალური სახელი, რომელიც შეიცავს სიტყვა 'image'-ს (s1_image, s2_image).
 gems:
-- jekyll-redirect-from  
-
+- jekyll-redirect-from
